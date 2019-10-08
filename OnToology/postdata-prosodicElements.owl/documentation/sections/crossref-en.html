@@ -1,5 +1,5 @@
-<html><h2 id="crossreference" class="list">Cross reference for postdata-prosodic ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by postdata-prosodic ontology.
+<html><h2 id="crossreference" class="list">Cross reference for postdata-structural ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by postdata-structural ontology.
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -22,6 +22,10 @@ This section provides details for each class and property defined by postdata-pr
       <li>
          <a href="#MetricalEncoding"
             title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalEncoding">MetricalEncoding</a>
+      </li>
+      <li>
+         <a href="#Rhyme"
+            title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
       </li>
       <li>
          <a href="#RhymeMatch"
@@ -293,6 +297,61 @@ Eg.: The definition of the plus sign to encode strong positions</span>
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Rhyme">
+      <h3>Rhyme<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme</p>
+      <div class="comment">
+         <span class="markdown">Repetition of similar sounding words occurring at the end of lines in poems or songs</span>
+      </div>
+      <dl>
+         <dt>Authors:</dt>
+         <dd>mluisadiez</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#ending"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#ending">ending</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#finalConsonant"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#finalConsonant">finalConsonant</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRhymeWord"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord">hasRhymeWord</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEcho"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEcho">isEcho</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isPresentIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isPresentIn">isPresentIn</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#label"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#label">label</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#matches"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#matches">matches</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#prefinalConsonants"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#prefinalConsonants">prefinalConsonants</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#rhymeCategory"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeCategory">rhymeCategory</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#rhymeGrapheme"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeGrapheme">rhymeGrapheme</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#rhymePhoneme"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymePhoneme">rhymePhoneme</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#rhymeScheme"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme">rhymeScheme</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#corresponds"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#corresponds">corresponds</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRhymeWord"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRhymeWord">isRhymeWord</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#presents"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents">presents</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="RhymeMatch">
       <h3>RhymeMatch<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -517,16 +576,14 @@ Eg.: The complete distribution of accented syllables of a work</span>
          </a>
       </li>
       <li>
-         <a href="#isEchoOf"
-            title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf">
-            <span>is echo of</span>
-         </a>
-      </li>
-      <li>
          <a href="#isFirstUnit"
             title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstUnit">
             <span>is first unit</span>
          </a>
+      </li>
+      <li>
+         <a href="#isEchoOf"
+            title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf">isEchoOf</a>
       </li>
       <li>
          <a href="#isEmployedIn"
@@ -872,8 +929,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1104,9 +1161,14 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">word</span>
             </dd>
             <dt>is inverse of</dt>
             <dd>
@@ -1141,11 +1203,6 @@ Eg.: The complete distribution of accented syllables of a work</span>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
             </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</span>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted"
@@ -1157,31 +1214,6 @@ Eg.: The complete distribution of accented syllables of a work</span>
                <a href="#analyses"
                   title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses">analyses</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isEchoOf">
-      <h3>is echo of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf</p>
-      <div class="comment">
-         <span class="markdown">This property points to a following Word (echo) that that rhymes with the current instance of Word</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">word</span>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">word</span>
             </dd>
          </dl>
       </div>
@@ -1219,6 +1251,35 @@ Eg.: The complete distribution of accented syllables of a work</span>
                <a href="#hasFirstUnit"
                   title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstUnit">hasFirstUnit</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEchoOf">
+      <h3>isEchoOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf</p>
+      <div class="comment">
+         <span class="markdown">This property points to a following Word (echo) that that rhymes with the current instance of Word</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">word</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">word</span>
             </dd>
          </dl>
       </div>
@@ -1315,8 +1376,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1362,8 +1423,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1442,8 +1503,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1767,8 +1828,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -2685,8 +2746,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2726,8 +2787,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3075,8 +3136,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3436,8 +3497,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3970,8 +4031,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4011,8 +4072,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4052,8 +4113,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4093,8 +4154,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">rhyme</span>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4131,6 +4192,12 @@ Eg.: The complete distribution of accented syllables of a work</span>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">Rhyme</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>

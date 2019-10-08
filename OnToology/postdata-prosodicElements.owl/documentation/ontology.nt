@@ -305,6 +305,7 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRhymeWord> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the instance of Word for a further linguistic analysis/division by words"@en .
@@ -314,7 +315,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -325,6 +325,8 @@ _:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to a following Word (echo) that that rhymes with the current instance of Word"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf> <http://www.w3.org/2000/01/rdf-schema#label> "isEchoOf"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEmployedIn
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEmployedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1115,6 +1117,7 @@ _:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -1152,6 +1155,9 @@ _:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#scheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#scheme> <http://www.w3.org/2000/01/rdf-schema#label> "scheme"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
@@ -1162,6 +1168,9 @@ _:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Linguistic properties of the vowels of the line"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme> <http://www.w3.org/2000/01/rdf-schema#label> "vowelTypeScheme"@en .
+# 
+# http://www.w3.org/2002/07/owl#topDataProperty
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> .
 # 
 # 
 # 
@@ -1175,9 +1184,9 @@ _:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # http://postdata.linhd.uned.es/ontology/postdata-core#Redaction
 <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> .
 _:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presentsRhymeMatching> .
@@ -1318,6 +1327,9 @@ _:genid48 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> <http://purl.org/dc/elements/1.1/creator> "mluisadiez"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> <http://www.w3.org/2000/01/rdf-schema#comment> "Repetition of similar sounding words occurring at the end of lines in poems or songs"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> <http://www.w3.org/2000/01/rdf-schema#label> "Rhyme"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#RhymeMatch
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#RhymeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1541,16 +1553,16 @@ _:genid97 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
 _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> .
 _:genid98 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid98 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> .
+_:genid98 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
 _:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> .
 _:genid99 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid99 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme> .
+_:genid99 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
 _:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presentsRhymeMatching> .

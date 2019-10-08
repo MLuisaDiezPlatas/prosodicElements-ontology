@@ -28,6 +28,9 @@
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
+    "syllabicMetricalScheme" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme"
+    },
     "Metaplasm" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm"
     },

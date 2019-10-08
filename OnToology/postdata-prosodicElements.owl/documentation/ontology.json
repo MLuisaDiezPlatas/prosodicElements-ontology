@@ -189,10 +189,10 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"
   } ]
 }, {
   "@id" : "_:genid24",
@@ -906,10 +906,10 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"
   } ]
 }, {
   "@id" : "_:genid99",
@@ -919,10 +919,10 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#license",
@@ -2550,7 +2550,19 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "mluisadiez"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Repetition of similar sounding words occurring at the end of lines in poems or songs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rhyme"
+  } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#RhymeMatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3279,6 +3291,9 @@
     "@language" : "en",
     "@value" : "hasRhymeWord"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
@@ -3379,9 +3394,6 @@
     "@language" : "en",
     "@value" : "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction or about its stanzas or lines"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   } ],
@@ -3455,6 +3467,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isEchoOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
@@ -4711,6 +4731,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A rhyme scheme is the pattern of rhymes at the end of each line of a poem or song. It is usually referred to by using letters to indicate which lines rhyme; lines designated with the same letter all rhyme with each other"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
     "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
@@ -4845,6 +4868,9 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
   } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#typeOfMetaplasm",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -5202,6 +5228,11 @@
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {

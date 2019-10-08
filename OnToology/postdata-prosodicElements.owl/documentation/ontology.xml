@@ -613,6 +613,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRhymeWord"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
         <dc:creator>mluisadiez</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T20:30:43Z</dc:date>
         <rdfs:comment xml:lang="en">This property points to the instance of Word for a further linguistic analysis/division by words</rdfs:comment>
@@ -627,7 +628,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"/>
         <dc:creator>mluisadiez</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T20:30:43Z</dc:date>
@@ -643,6 +643,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
         <rdfs:comment xml:lang="en">This property points to a following Word (echo) that that rhymes with the current instance of Word</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">isEchoOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1844,6 +1846,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator>mluisadiez</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T18:39:21Z</dc:date>
@@ -1899,6 +1902,13 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme -->
+
+
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme"/>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme -->
 
 
@@ -1912,6 +1922,15 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">vowelTypeScheme</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"/>
+    </rdf:Description>
     
 
 
@@ -1933,9 +1952,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"/>
+                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2137,7 +2156,11 @@ Eg.: The definition of the plus sign to encode strong positions</rdfs:comment>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme -->
 
 
-    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"/>
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme">
+        <dc:creator xml:lang="en">mluisadiez</dc:creator>
+        <rdfs:comment xml:lang="en">Repetition of similar sounding words occurring at the end of lines in poems or songs</rdfs:comment>
+        <rdfs:label xml:lang="en">Rhyme</rdfs:label>
+    </owl:Class>
     
 
 
@@ -2432,9 +2455,9 @@ Eg.: The complete distribution of accented syllables of a work</rdfs:comment>
     <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"/>
+                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -2447,9 +2470,9 @@ Eg.: The complete distribution of accented syllables of a work</rdfs:comment>
     <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"/>
+                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
