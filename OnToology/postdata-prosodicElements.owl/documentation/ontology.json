@@ -2501,7 +2501,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.\nSome examples are dieresis, syneresis, sinalefa or hiatus."
+    "@value" : "A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.\nSome examples are dieresis, syneresis, sinalefa or hiatus.\nThere is a pdprosodic:typeOfMetaplasm property whose range of values is a controlled metaplasm type vocabulary, which allows to specify the nature of it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -2550,9 +2550,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "MetricalSyllable"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern",
@@ -2760,12 +2757,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "affectsFirst"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme",
@@ -2836,7 +2834,11 @@
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "This property points to an instance of Redaction in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively."
+    "@language" : "en",
+    "@value" : "This property points to an instance of Redaction, Line or Stanza in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -2845,9 +2847,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "analyses"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"
@@ -3396,6 +3395,21 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the metaplasm that affects a word or syllable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isAffectedBy"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
@@ -3407,10 +3421,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction or about its stanzas or lines"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+    "@value" : "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction, stanzas or lines"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
@@ -3558,6 +3569,27 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A metric syllable produced by the effect of a metaplasm, is formed by one or more syllables of a word."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isFormedWith"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetre",
@@ -3816,10 +3848,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "If the syllable has accent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable"
+    "@value" : "If the syllable or a metricla syllable has accent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -4898,7 +4927,7 @@
     "@value" : "Position of the stressed syllable from the end of the word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -5215,54 +5244,6 @@
     "@id" : "_:genid98"
   }, {
     "@id" : "_:genid99"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property points to an instance of Line about which the item at hand presents analytical information"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "analysesLine"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property points to an instance of Stanza about which the item at hand presents analytical information"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "analysesStanza"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/contributors",

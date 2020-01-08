@@ -253,16 +253,16 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst
 :affectsFirst rdf:type owl:ObjectProperty ;
               rdfs:domain :Metaplasm ;
-              rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> ;
               rdfs:comment "This property points to the first of the words affected by a metaplasm"@en ;
+              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
               rdfs:label "affectsFirst"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses
 :analyses rdf:type owl:ObjectProperty ;
           owl:inverseOf :isAnalysedThrough ;
-          rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
-          rdfs:comment "This property points to an instance of Redaction in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively." ;
+          rdfs:domain :Pattern ;
+          rdfs:comment "This property points to an instance of Redaction, Line or Stanza in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively."@en ;
           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
           rdfs:label "analyses"@en .
 
@@ -374,14 +374,20 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:label "hasRhymeWord"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy
+:isAffectedBy rdf:type owl:ObjectProperty ;
+              rdfs:comment "Refers to the metaplasm that affects a word or syllable"@en ;
+              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+              rdfs:label "isAffectedBy"@en .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough
 :isAnalysedThrough rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
-                   rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
                    rdfs:range :Pattern ;
                    <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                    <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
-                   rdfs:comment "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction or about its stanzas or lines"@en .
+                   rdfs:comment "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction, stanzas or lines"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf
@@ -418,6 +424,15 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:comment "This property points to the Foot that contains the item at hand as its first element"@en ,
                           "isFirstUnit"@en ;
              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith
+:isFormedWith rdf:type owl:ObjectProperty ;
+              rdfs:domain :MetricalSyllable ;
+              rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable> ;
+              rdfs:comment "A metric syllable produced by the effect of a metaplasm, is formed by one or more syllables of a word."@en ;
+              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+              rdfs:label "isFormedWith"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isPresentIn
@@ -698,26 +713,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                    rdfs:comment "Type of metre: accentual verse, accentual-syllabic verse, syllabic verse, quantitative verse, etc."@en ;
                    rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
                    rdfs:label "versificationType"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine> rdf:type owl:ObjectProperty ;
-                                                                                  rdfs:subPropertyOf :analyses ;
-                                                                                  rdfs:domain :LinePattern ;
-                                                                                  rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line> ;
-                                                                                  rdfs:comment "This property points to an instance of Line about which the item at hand presents analytical information"@en ;
-                                                                                  rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                                                                                  rdfs:label "analysesLine"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza> rdf:type owl:ObjectProperty ;
-                                                                                    rdfs:subPropertyOf :analyses ;
-                                                                                    rdfs:domain :StanzaPattern ;
-                                                                                    rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza> ;
-                                                                                    rdfs:comment "This property points to an instance of Stanza about which the item at hand presents analytical information"@en ;
-                                                                                    rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                                                                                    rdfs:label "analysesStanza"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -1025,9 +1020,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed
 :isStressed rdf:type owl:DatatypeProperty ;
-            rdfs:domain :MetricalSyllable ;
             rdfs:range xsd:boolean ;
-            rdfs:comment "If the syllable has accent"@en ;
+            rdfs:comment "If the syllable or a metricla syllable has accent"@en ;
             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
             rdfs:label "isStressed"@en .
 
@@ -1298,7 +1292,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition
 :stressPosition rdf:type owl:DatatypeProperty ;
-                rdfs:domain :MetricalSyllable ;
+                rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> ;
                 rdfs:range xsd:integer ;
                 rdfs:comment "Position of the stressed syllable from the end of the word"@en ;
                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
@@ -1444,7 +1438,8 @@ Eg.: The number of syllables of the Line"""@en ;
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm
 :Metaplasm rdf:type owl:Class ;
            rdfs:comment """A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.
-Some examples are dieresis, syneresis, sinalefa or hiatus."""@en ;
+Some examples are dieresis, syneresis, sinalefa or hiatus.
+There is a pdprosodic:typeOfMetaplasm property whose range of values is a controlled metaplasm type vocabulary, which allows to specify the nature of it."""@en ;
            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
            rdfs:label "Metaplasm"@en .
 
@@ -1466,7 +1461,6 @@ Eg.: The definition of the plus sign to encode strong positions."""@en ;
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable
 :MetricalSyllable rdf:type owl:Class ;
-                  rdfs:subClassOf <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable> ;
                   rdfs:comment "Metric syllable built by applying metaplasms to syllables."@en ;
                   rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
                   rdfs:label "MetricalSyllable"@en .
