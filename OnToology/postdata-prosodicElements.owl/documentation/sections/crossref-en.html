@@ -1,5 +1,5 @@
-<html><h2 id="crossreference" class="list">Cross reference for postdata-prosodicElements ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by postdata-prosodicElemnts ontology.
+<html><h2 id="crossreference" class="list">Cross reference for postdata-structural ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by postdata-structural ontology.
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -195,9 +195,7 @@ Eg.: The number of syllables of the Line</span>
                title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowels">accentedVowels</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#accentedVowelsPattern"
                title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowelsPattern">accentedVowelsPattern</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine">analysesLine</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasFirstFoot"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirstFoot"
                title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstFoot">hasFirstFoot</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#initialPhonemesPattern"
                title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPattern">initialPhonemesPattern</a>
@@ -242,7 +240,8 @@ Eg.: The number of syllables of the Line</span>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm</p>
       <div class="comment">
          <span class="markdown">A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.
-Some examples are dieresis, syneresis, sinalefa or hiatus.</span>
+Some examples are dieresis, syneresis, sinalefa or hiatus.
+There is a pdprosodic:typeOfMetaplasm property whose range of values is a controlled metaplasm type vocabulary, which allows to specify the nature of it.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -320,18 +319,11 @@ Eg.: The definition of the plus sign to encode strong positions.</span>
          <dd>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</dd>
       </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">syllable</span>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#isStressed"
-               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed">isStressed</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#stressPosition"
-               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition">stressPosition</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <a href="#isFormedWith"
+               title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith">isFormedWith</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -449,9 +441,7 @@ Eg.: The number of lines of a Stanza or its categorisation according to metrics 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza">analysesStanza</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#clausulaScheme"
+            <a href="#clausulaScheme"
                title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaScheme">clausulaScheme</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#clausulaSchemeType"
                title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaSchemeType">clausulaSchemeType</a>
@@ -564,14 +554,6 @@ Eg.: The complete distribution of accented syllables of a work</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses">analyses</a>
       </li>
       <li>
-         <a href="#http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine">analysesLine</a>
-      </li>
-      <li>
-         <a href="#http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza">analysesStanza</a>
-      </li>
-      <li>
          <a href="#clausula"
             title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausula">clausula</a>
       </li>
@@ -620,6 +602,10 @@ Eg.: The complete distribution of accented syllables of a work</span>
          </a>
       </li>
       <li>
+         <a href="#isAffectedBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy">isAffectedBy</a>
+      </li>
+      <li>
          <a href="#isEchoOf"
             title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf">isEchoOf</a>
       </li>
@@ -630,6 +616,10 @@ Eg.: The complete distribution of accented syllables of a work</span>
       <li>
          <a href="#isFirstFoot"
             title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstFoot">isFirstFoot</a>
+      </li>
+      <li>
+         <a href="#isFormedWith"
+            title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith">isFormedWith</a>
       </li>
       <li>
          <a href="#isPresentIn"
@@ -738,6 +728,10 @@ Eg.: The complete distribution of accented syllables of a work</span>
       <div class="comment">
          <span class="markdown">This property points to the first of the words affected by a metaplasm</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -745,11 +739,6 @@ Eg.: The complete distribution of accented syllables of a work</span>
                <a href="#Metaplasm"
                   title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm">Metaplasm</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">word</span>
             </dd>
          </dl>
       </div>
@@ -762,7 +751,7 @@ Eg.: The complete distribution of accented syllables of a work</span>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses</p>
       <div class="comment">
-         <span class="markdown">This property points to an instance of Redaction in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively.</span>
+         <span class="markdown">This property points to an instance of Redaction, Line or Stanza in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -770,96 +759,17 @@ Eg.: The complete distribution of accented syllables of a work</span>
       </dl>
       <div class="description">
          <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine">analysesLine</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza">analysesStanza</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</span>
+                     title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern">pattern</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isAnalysedThrough"
                   title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough">is analysed through</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine">
-      <h3>analysesLine<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine</p>
-      <div class="comment">
-         <span class="markdown">This property points to an instance of Line about which the item at hand presents analytical information</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#analyses"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses">analyses</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#LinePattern"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern">LinePattern</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">line</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza">
-      <h3>analysesStanza<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza</p>
-      <div class="comment">
-         <span class="markdown">This property points to an instance of Stanza about which the item at hand presents analytical information</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#analyses"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses">analyses</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#StanzaPattern"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern">StanzaPattern</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">stanza</span>
             </dd>
          </dl>
       </div>
@@ -1219,7 +1129,7 @@ Eg.: The complete distribution of accented syllables of a work</span>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough</p>
       <div class="comment">
-         <span class="markdown">This property points to an item (Pattern) that contains analytical content about the current instance of Redaction or about its stanzas or lines</span>
+         <span class="markdown">This property points to an item (Pattern) that contains analytical content about the current instance of Redaction, stanzas or lines</span>
       </div>
       <dl>
          <dt>Date:</dt>
@@ -1234,11 +1144,6 @@ Eg.: The complete distribution of accented syllables of a work</span>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</span>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1291,6 +1196,21 @@ Eg.: The complete distribution of accented syllables of a work</span>
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="isAffectedBy">
+      <h3>isAffectedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy</p>
+      <div class="comment">
+         <span class="markdown">Refers to the metaplasm that affects a word or syllable</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</dd>
+      </dl>
    </div>
    <div class="entity" id="isEchoOf">
       <h3>isEchoOf<sup class="type-op" title="object property">op</sup>
@@ -1391,6 +1311,36 @@ Eg.: The complete distribution of accented syllables of a work</span>
                <a href="#hasFirstFoot"
                   title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstFoot">hasFirstFoot</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isFormedWith">
+      <h3>isFormedWith<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith</p>
+      <div class="comment">
+         <span class="markdown">A metric syllable produced by the effect of a metaplasm, is formed by one or more syllables of a word.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricalSyllable"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable">MetricalSyllable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">syllable</span>
             </dd>
          </dl>
       </div>
@@ -3479,7 +3429,7 @@ Eg.: The complete distribution of accented syllables of a work</span>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed</p>
       <div class="comment">
-         <span class="markdown">If the syllable has accent</span>
+         <span class="markdown">If the syllable or a metricla syllable has accent</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3487,12 +3437,6 @@ Eg.: The complete distribution of accented syllables of a work</span>
       </dl>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricalSyllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable">MetricalSyllable</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
@@ -4409,9 +4353,8 @@ Eg.: The complete distribution of accented syllables of a work</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#MetricalSyllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable">MetricalSyllable</a>
-               <sup class="type-c" title="class">c</sup>
+               <span class="dotted"
+                     title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">word</span>
             </dd>
             <dt>has range</dt>
             <dd>

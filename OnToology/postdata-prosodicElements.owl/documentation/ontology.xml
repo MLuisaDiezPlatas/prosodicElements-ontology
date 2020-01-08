@@ -2,13 +2,15 @@
 <rdf:RDF xmlns="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#"
      xml:base="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns1="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/ontology/olo/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
@@ -40,7 +42,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <terms:publisher>POSTDATA Project</terms:publisher>
         <vann:preferredNamespacePrefix xml:lang="en">pdprosodic</vann:preferredNamespacePrefix>
         <owl:versionInfo>V1.0</owl:versionInfo>
-        <ns1:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</ns1:license>
+        <ns:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</ns:license>
     </owl:Ontology>
     
 
@@ -443,8 +445,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst">
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
         <rdfs:comment xml:lang="en">This property points to the first of the words affected by a metaplasm</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">affectsFirst</rdfs:label>
     </owl:ObjectProperty>
     
@@ -455,8 +457,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses">
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
-        <rdfs:comment>This property points to an instance of Redaction in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"/>
+        <rdfs:comment xml:lang="en">This property points to an instance of Redaction, Line or Stanza in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">analyses</rdfs:label>
     </owl:ObjectProperty>
@@ -614,16 +616,26 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy">
+        <rdfs:comment xml:lang="en">Refers to the metaplasm that affects a word or syllable</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">isAffectedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough -->
 
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"/>
         <dc:creator>mluisadiez</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T20:30:43Z</dc:date>
-        <rdfs:comment xml:lang="en">This property points to an item (Pattern) that contains analytical content about the current instance of Redaction or about its stanzas or lines</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property points to an item (Pattern) that contains analytical content about the current instance of Redaction, stanzas or lines</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -676,6 +688,19 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:comment xml:lang="en">This property points to the Foot that contains the item at hand as its first element</rdfs:comment>
         <rdfs:comment xml:lang="en">isFirstUnit</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:comment xml:lang="en">A metric syllable produced by the effect of a metaplasm, is formed by one or more syllables of a word.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">isFormedWith</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1077,34 +1102,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:comment xml:lang="en">Type of metre: accentual verse, accentual-syllabic verse, syllabic verse, quantitative verse, etc.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">versificationType</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine -->
-
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
-        <rdfs:comment xml:lang="en">This property points to an instance of Line about which the item at hand presents analytical information</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">analysesLine</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza -->
-
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
-        <rdfs:comment xml:lang="en">This property points to an instance of Stanza about which the item at hand presents analytical information</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">analysesStanza</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1535,9 +1532,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed">
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">If the syllable has accent</rdfs:comment>
+        <rdfs:comment xml:lang="en">If the syllable or a metricla syllable has accent</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">isStressed</rdfs:label>
     </owl:DatatypeProperty>
@@ -1904,7 +1900,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition">
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Position of the stressed syllable from the end of the word</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
@@ -2121,7 +2117,8 @@ Eg.: The number of syllables of the Line</rdfs:comment>
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm">
         <rdfs:comment xml:lang="en">A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.
-Some examples are dieresis, syneresis, sinalefa or hiatus.</rdfs:comment>
+Some examples are dieresis, syneresis, sinalefa or hiatus.
+There is a pdprosodic:typeOfMetaplasm property whose range of values is a controlled metaplasm type vocabulary, which allows to specify the nature of it.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Metaplasm</rdfs:label>
     </owl:Class>
@@ -2153,7 +2150,6 @@ Eg.: The definition of the plus sign to encode strong positions.</rdfs:comment>
 
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable">
-        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
         <rdfs:comment xml:lang="en">Metric syllable built by applying metaplasms to syllables.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">MetricalSyllable</rdfs:label>

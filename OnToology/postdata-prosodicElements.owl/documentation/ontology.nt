@@ -197,15 +197,15 @@
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the first of the words affected by a metaplasm"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst> <http://www.w3.org/2000/01/rdf-schema#label> "affectsFirst"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Redaction in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively." .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Redaction, Line or Stanza in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> <http://www.w3.org/2000/01/rdf-schema#label> "analyses"@en .
 # 
@@ -307,14 +307,19 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#label> "hasRhymeWord"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the metaplasm that affects a word or syllable"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isAffectedBy"@en .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction or about its stanzas or lines"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction, stanzas or lines"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -347,6 +352,14 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the Foot that contains the item at hand as its first element"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "isFirstUnit"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "A metric syllable produced by the effect of a metaplasm, is formed by one or more syllables of a word."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith> <http://www.w3.org/2000/01/rdf-schema#label> "isFormedWith"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isPresentIn
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isPresentIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -609,24 +622,6 @@ _:genid19 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#versificationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of metre: accentual verse, accentual-syllabic verse, syllabic verse, quantitative verse, etc."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#versificationType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#versificationType> <http://www.w3.org/2000/01/rdf-schema#label> "versificationType"@en .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Line about which the item at hand presents analytical information"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesLine> <http://www.w3.org/2000/01/rdf-schema#label> "analysesLine"@en .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Stanza about which the item at hand presents analytical information"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#analysesStanza> <http://www.w3.org/2000/01/rdf-schema#label> "analysesStanza"@en .
 # 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -911,9 +906,8 @@ _:genid21 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed> <http://www.w3.org/2000/01/rdf-schema#comment> "If the syllable has accent"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed> <http://www.w3.org/2000/01/rdf-schema#comment> "If the syllable or a metricla syllable has accent"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed> <http://www.w3.org/2000/01/rdf-schema#label> "isStressed"@en .
 # 
@@ -1160,7 +1154,7 @@ _:genid21 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable> .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Position of the stressed syllable from the end of the word"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
@@ -1314,7 +1308,7 @@ _:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm> <http://www.w3.org/2000/01/rdf-schema#comment> "A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.\nSome examples are dieresis, syneresis, sinalefa or hiatus."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm> <http://www.w3.org/2000/01/rdf-schema#comment> "A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.\nSome examples are dieresis, syneresis, sinalefa or hiatus.\nThere is a pdprosodic:typeOfMetaplasm property whose range of values is a controlled metaplasm type vocabulary, which allows to specify the nature of it."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm> <http://www.w3.org/2000/01/rdf-schema#label> "Metaplasm"@en .
 # 
@@ -1333,7 +1327,6 @@ _:genid47 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable> .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric syllable built by applying metaplasms to syllables."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable> <http://www.w3.org/2000/01/rdf-schema#label> "MetricalSyllable"@en .
