@@ -9,30 +9,29 @@
 <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> rdf:type owl:Ontology ;
                                                                     owl:imports <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> ;
                                                                     <http://purl.org/dc/elements/1.1/contributors> """Alvaro Pérez (LINHD_POSTDATA-UNED)
-https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"""@en ,
+https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/""" ,
                                                                                                                    """Bruno Sartini (Bolonia University)
-https://orcid.org/0000-0002-9152-4402"""@en ,
+https://orcid.org/0000-0002-9152-4402""" ,
                                                                                                                    """Javier de la Rosa (LINHD_POSTDATA-UNED)
-https://www.linkedin.com/in/versae/"""@en ,
+https://www.linkedin.com/in/versae/""" ,
                                                                                                                    """Oscar Corcho (Universidad Politécnica de Madrid)
-http://orcid.org/0000-0002-9260-0753"""@en ;
+http://orcid.org/0000-0002-9260-0753""" ;
                                                                     <http://purl.org/dc/elements/1.1/creator> """Helena Bermúdez Sabel 
-https://orcid.org/0000-0001-7782-206X"""@en ,
-                                                                                                              """Mª Luisa Díez Platas 
-https://orcid.org/0000-0002-9416-3147"""@en ;
-                                                                    <http://purl.org/dc/elements/1.1/date> "2019-07-12"@en ;
-                                                                    <http://purl.org/dc/elements/1.1/description> """This ontology contains the classes and properties necessary to structure the information of a prosodic analysis, that is to say, the information obtained from the study of the meters and the forms of versification.
-In poetry, the metric is the basic rhythmic structure of the verses of a poetic work."""@en ;
+https://orcid.org/0000-0001-7782-206X""" ,
+                                                                                                              """Mª Luisa Díez Platas
+https://orcid.org/0000-0002-9416-3147""" ;
+                                                                    <http://purl.org/dc/elements/1.1/date> "2020-02-22" ;
+                                                                    <http://purl.org/dc/elements/1.1/description> "This ontology contains the classes and properties needed to provide information of a prosodic analysis, that is, the information obtained from the study of the meters and the forms of versification. In poetry, the metric is the basic rhythmic structure of the verses of a poetic work."@en ;
                                                                     <http://purl.org/dc/elements/1.1/title> "postdata-structural ontology"@en ;
-                                                                    <http://purl.org/dc/terms/publisher> """POSTDATA Project
+                                                                    <http://purl.org/dc/terms/publisher> "POSTDATA Project"@en ,
+                                                                                                         """POSTDATA Project
 
 “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”
 Principal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812
-Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"""@en ,
-                                                                                                         "POSTDATA Project" ;
-                                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "pdprosodic"@en ;
-                                                                    owl:versionInfo "V1.0" ;
-                                                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#license> "https://creativecommons.org/licenses/by/4.0/"@en .
+Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"""@en ;
+                                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "pdprosodic" ;
+                                                                    owl:versionInfo "V1.1" ;
+                                                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
 
 #################################################################
 #    Annotation properties
@@ -254,8 +253,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 :affectsFirst rdf:type owl:ObjectProperty ;
               rdfs:domain :Metaplasm ;
               rdfs:comment "This property points to the first of the words affected by a metaplasm"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "affectsFirst"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "affects First"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#analyses
@@ -263,7 +262,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
           owl:inverseOf :isAnalysedThrough ;
           rdfs:domain :Pattern ;
           rdfs:comment "This property points to an instance of Redaction, Line or Stanza in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines,  respectively."@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
           rdfs:label "analyses"@en .
 
 
@@ -276,7 +275,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                        owl:hasValue <http://postdata.linhd.uned.es/kos/clausula>
                      ] ;
           rdfs:comment "The categorisation of the item according to the rhythmic ending of a line  determined by the number of unstressed syllables following the last stressed one. This property is both valid for accentual and syllabic versification, so possible values include: masculine (zero syllables), femenine (one), dactylic, proparoxitone, etc."@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausula"@en ;
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
           rdfs:label "clausula"@en .
 
 
@@ -286,11 +285,11 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                 owl:hasValue <http://postdata.linhd.uned.es/kos/clausulaScheme-type>
+                                 owl:hasValue <http://postdata.linhd.uned.es/kos/clausula-scheme-type>
                                ] ;
                     rdfs:comment "Categorisation of the stanza according to the distribution of clausulae/gender of rhymes (eg. “classic”, “heterogonique”, etc.)"@en ;
-                    rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                    rdfs:label "clausulaSchemeType"@en .
+                    rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                    rdfs:label "clausula Scheme Type"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#corresponds
@@ -299,7 +298,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:domain :RhymeMatch ;
              rdfs:range :Rhyme ;
              rdfs:comment "This property points to the instance of Rhyme whose rhyming word is described by the current instance of RhymeMatch"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
              rdfs:label "corresponds"@en .
 
 
@@ -309,7 +308,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
          rdfs:domain :MetricalEncoding ;
          rdfs:range :Symbol ;
          rdfs:comment "This propery points to a Symbol used in metrical notation being defined"@en ;
-         rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+         rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
          rdfs:label "employs"@en .
 
 
@@ -321,8 +320,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                        owl:hasValue <http://postdata.linhd.uned.es/kos/feet-type>
                      ] ;
           rdfs:comment "Categorisation of the stanza or line according to the type of feet"@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-          rdfs:label "feetType"@en .
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+          rdfs:label "feet Type"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#footType
@@ -334,8 +333,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                        owl:hasValue <http://postdata.linhd.uned.es/kos/foot-type>
                      ] ;
           rdfs:comment "Type of foot (e.g. iamb)"@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-          rdfs:label "footType"@en .
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+          rdfs:label "foot Type"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstFoot
@@ -344,11 +343,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               owl:inverseOf :isFirstFoot ;
               rdfs:domain :LinePattern ;
               rdfs:range :Foot ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
-              rdfs:comment "This property points to the first Foot of the line" ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "hasFirstFoot"@en .
+              rdfs:comment "This property points to the first Foot of the line"@en ;
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "has First Foot"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstUnit
@@ -357,8 +354,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:domain :Foot ;
               rdfs:range :FootDivision ;
               rdfs:comment "This property points to the firt unit in which the foot is divided (an instance of FootDivision)"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "hasFirstUnit"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "has First Unit"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord
@@ -367,27 +364,24 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               owl:inverseOf :isRhymeWord ;
               rdfs:domain :Rhyme ;
               rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
               rdfs:comment "This property points to the instance of Word for a further linguistic analysis/division by words"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "hasRhymeWord"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "has Rhyme Word"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy
 :isAffectedBy rdf:type owl:ObjectProperty ;
               rdfs:comment "Refers to the metaplasm that affects a word or syllable"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "isAffectedBy"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "is Affected By"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough
 :isAnalysedThrough rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf owl:topObjectProperty ;
                    rdfs:range :Pattern ;
-                   <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                   <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
-                   rdfs:comment "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction, stanzas or lines"@en .
+                   rdfs:comment "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction, stanzas or lines"@en ;
+                   rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                   rdfs:label "is Analysed Through"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf
@@ -395,8 +389,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
           rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> ;
           rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> ;
           rdfs:comment "This property points to a following Word (echo) that that rhymes with the current instance of Word"@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-          rdfs:label "isEchoOf"@en .
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+          rdfs:label "is Echo Of"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEmployedIn
@@ -404,8 +398,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:domain :Symbol ;
               rdfs:range :MetricalEncoding ;
               rdfs:comment "This property points to the instance of MetricalEncoding that employs the item at hand"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "isEmployedIn"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "is Employed In"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstFoot
@@ -413,8 +407,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:domain :Foot ;
              rdfs:range :LinePattern ;
              rdfs:comment "This property points to the LinePattern whose feet description begins with the current item under analysis"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "isFirstFoot"@en .
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "is First Foot"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstUnit
@@ -422,8 +416,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:domain :FootDivision ;
              rdfs:range :Foot ;
              rdfs:comment "This property points to the Foot that contains the item at hand as its first element"@en ,
-                          "isFirstUnit"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
+                          "is First Unit"@en ;
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith
@@ -431,8 +425,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:domain :MetricalSyllable ;
               rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable> ;
               rdfs:comment "A metric syllable produced by the effect of a metaplasm, is formed by one or more syllables of a word."@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "isFormedWith"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "is Formed With"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isPresentIn
@@ -446,8 +440,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                       )
                         ] ;
              rdfs:comment "This property points to the text (instance of Redaction, Line or Stanza) which contains the current item under analysis"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "isPresentIn"@en .
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "is Present In"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRhymeWord
@@ -455,8 +449,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> ;
              rdfs:range :Rhyme ;
              rdfs:comment "This property points to the instance of Rhyme that contains the item at hand as its rhyme word"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "isRhymeWord"@en .
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "is Rhyme Word"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isUsedBy
@@ -465,8 +459,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
           rdfs:domain :MetricalEncoding ;
           rdfs:range :Pattern ;
           rdfs:comment "This property points to an instance of LinePattern, StanzaPattern or WorkPattern which uses the convention defined in the current instance of MetricalEncoding"@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-          rdfs:label "isUsedBy"@en .
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+          rdfs:label "is Used By"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#matches
@@ -474,10 +468,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
          rdfs:subPropertyOf owl:topObjectProperty ;
          rdfs:domain :Rhyme ;
          rdfs:range :RhymeMatch ;
-         <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-         <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
          rdfs:comment "This property points to the instance of RhymeMatch that contains the echo of the current rhyme word under analysis"@en ;
-         rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+         rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
          rdfs:label "matches"@en .
 
 
@@ -490,8 +482,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-category>
                              ] ;
                   rdfs:comment "Major category to identify the metrical type (e.g. fixed forms vs strophic)"@en ;
-                  rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                  rdfs:label "metricalCategory"@en .
+                  rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                  rdfs:label "metrical Category"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalComplexity
@@ -503,8 +495,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                  owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-complexity>
                                ] ;
                     rdfs:comment "Categorisation depending on the number of syllables: usually, less or more than eight"@en ;
-                    rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                    rdfs:label "metricalComplexity"@en .
+                    rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                    rdfs:label "metrical Complexity"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalContext
@@ -516,8 +508,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                               owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-context>
                             ] ;
                  rdfs:comment "Categorisation depending on whether all lines have the same number of syllables"@en ;
-                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                 rdfs:label "metricalContext"@en .
+                 rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                 rdfs:label "metrical Context"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalType
@@ -528,8 +520,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                            owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-type>
                          ] ;
               rdfs:comment "Categorisation of the stanza/line  grouping or work according to metrics. E.g. “sapphic stanza”"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "metricalType"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "metrical Type"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextFoot
@@ -538,11 +530,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
           owl:inverseOf :previousFoot ;
           rdfs:domain :Foot ;
           rdfs:range :Foot ;
-          <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-          <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
           rdfs:comment "This property points to the next instance of Foot"@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-          rdfs:label "nextFoot"@en .
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+          rdfs:label "next Foot"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextFootAfterCaesura
@@ -551,11 +541,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                       owl:inverseOf :previousFootBeforeCaesura ;
                       rdfs:domain :Foot ;
                       rdfs:range :Foot ;
-                      <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                      <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
                       rdfs:comment "This property points to the next instance of Foot when this is positioned after a caesura"@en ;
-                      rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                      rdfs:label "nextFootAfterCaesura"@en .
+                      rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                      rdfs:label "next Foot After Caesura"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextUnit
@@ -564,18 +552,16 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
           rdfs:domain :FootDivision ;
           rdfs:range :FootDivision ;
           rdfs:comment "This property points to the next unit that forms the foot (an instance of FootDivision)"@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-          rdfs:label "nextUnit"@en .
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+          rdfs:label "next Unit"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents
 :presents rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
           rdfs:range :Rhyme ;
-          <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-          <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
           rdfs:comment "This property points to an instance of Rhyme that is contained in the current item under analysis"@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
           rdfs:label "presents"@en .
 
 
@@ -584,11 +570,11 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                    owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
+                                    owl:hasValue <http://postdata.linhd.uned.es/kos/rhyme-matching-type>
                                   ] ;
                        rdfs:comment "Categorisation of the stanza or  work according to the degree in which the different rhyming sounds match (e.g. assonant, consonant...)"@en ;
-                       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                       rdfs:label "presentsRhymeMatching"@en .
+                       rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                       rdfs:label "presents Rhyme Matching"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousFoot
@@ -596,8 +582,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:domain :Foot ;
               rdfs:range :Foot ;
               rdfs:comment "This property points to the previous instance of Foot"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "previousFoot"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "previous Foot"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousFootBeforeCaesura
@@ -610,8 +596,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                        ] ;
                            rdfs:range :Foot ;
                            rdfs:comment "This property points to the previous instance of Foot when this is positioned before a caesura"@en ;
-                           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                           rdfs:label "previousFootBeforeCaesura"@en .
+                           rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                           rdfs:label "previous Foot Before Caesura"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousUnit
@@ -619,8 +605,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:domain :FootDivision ;
               rdfs:range :FootDivision ;
               rdfs:comment "This property points to the previous unit that forms the foot (an instance of FootDivision)"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "previousUnit"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "previous Unit"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeDispositionType
@@ -629,11 +615,11 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                   owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeDisposition-type>
+                                   owl:hasValue <http://postdata.linhd.uned.es/kos/rhyme-disposition-type>
                                  ] ;
                       rdfs:comment "Categorisation of the stanza according to the diposition of the rhymes (eg. “cross”, “pair”)"@en ;
-                      rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                      rdfs:label "rhymeDispositionType"@en .
+                      rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                      rdfs:label "rhyme Disposition Type"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymesWith
@@ -641,8 +627,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
             rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line> ;
             rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line> ;
             rdfs:comment "This property points to an instance of Line that rhymes with the current Line under analysis"@en ;
-            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-            rdfs:label "rhymesWith"@en .
+            rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+            rdfs:label "rhymes With"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#successIn
@@ -650,7 +636,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
            rdfs:domain :Metaplasm ;
            rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line> ;
            rdfs:comment "A metaplasm is presented in Line"@en ;
-           rdfs:label "successIn"@en .
+           rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+           rdfs:label "success In"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#typeOfMetaplasm
@@ -662,7 +649,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                               owl:hasValue <http://postdata.linhd.uned.es/kos/metaplasm-type>
                             ] ;
                  rdfs:comment "Type of Metaplasm"@en ;
-                 rdfs:label "typeOfMetaplasm"@en .
+                 rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                 rdfs:label "type Of Metaplasm"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#typeOfRhymeMatching
@@ -671,11 +659,11 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                  owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
+                                  owl:hasValue <http://postdata.linhd.uned.es/kos/rhyme-matching-type>
                                 ] ;
                      rdfs:comment "Explain the degree in which the different rhyming sounds match (e.g. assonant, consonant, perfect, imperfect, half-rhyme...)"@en ;
-                     rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                     rdfs:label "typeOfRhymeMatching"@en .
+                     rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                     rdfs:label "type Of Rhyme Matching"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#unitType
@@ -683,11 +671,11 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
           rdfs:domain :FootDivision ;
           rdfs:range [ rdf:type owl:Restriction ;
                        owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                       owl:hasValue <http://postdata.linhd.uned.es/kos/footUnit-type>
+                       owl:hasValue <http://postdata.linhd.uned.es/kos/foot-unit-type>
                      ] ;
           rdfs:comment "The type of unit that defines the foot division"@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-          rdfs:label "unitType"@en .
+          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+          rdfs:label "unit Type"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#uses
@@ -695,10 +683,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
       rdfs:subPropertyOf owl:topObjectProperty ;
       rdfs:domain :Pattern ;
       rdfs:range :MetricalEncoding ;
-      <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-      <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
       rdfs:comment "This property points to the instance of MetricalEncoding in which the conventions implemented in the item at hand are explained" ;
-      rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+      rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
       rdfs:label "uses"@en .
 
 
@@ -711,8 +697,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                 owl:hasValue <http://postdata.linhd.uned.es/kos/versification-type>
                               ] ;
                    rdfs:comment "Type of metre: accentual verse, accentual-syllabic verse, syllabic verse, quantitative verse, etc."@en ;
-                   rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                   rdfs:label "versificationType"@en .
+                   rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                   rdfs:label "versification Type"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -725,58 +711,46 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowels
 :accentedVowels rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:domain :LinePattern ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                 rdfs:comment "Stressed vowels in the order in which they occur in the text"@en ;
-                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                rdfs:label "accentedVowels"@en .
+                rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                rdfs:label "accented Vowels"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowelsPattern
 :accentedVowelsPattern rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf owl:topDataProperty ;
-                       rdfs:domain :LinePattern ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :accentedVowelsPattern ;
-                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onDataRange xsd:string
-                                   ] ;
+                       rdfs:domain :LinePattern ;
                        rdfs:range xsd:string ;
-                       <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                        rdfs:comment "Stressed vowels in a line, in alphabetical order to show sound repetitions"@en ;
-                       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                       rdfs:label "accentedVowelsPattern"@en .
+                       rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                       rdfs:label "accented Vowels Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme
 :altCountingMetricalScheme rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
                            rdfs:range xsd:string ;
-                           <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                           rdfs:comment "Alternative syllabic/moraic metrical schemae (e.g. long lines with caesura opposite to short lines)" ;
-                           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                           rdfs:label "altCountingMetricalScheme"@en .
+                           rdfs:comment "Alternative syllabic/moraic metrical schemae (e.g. long lines with caesura opposite to short lines)"@en ;
+                           rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                           rdfs:label "alt Counting Metrical Scheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme
 :altPatterningMetricalScheme rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf owl:topDataProperty ;
                              rdfs:range xsd:string ;
-                             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                             rdfs:comment "Distribution of stresses/long syllables, but, for instance, with the addition of punctuation marks to present word boundaries in the line" ;
-                             rdfs:label "altPatterningMetricalScheme"@en .
+                             rdfs:comment "Distribution of stresses/long syllables, but, for instance, with the addition of punctuation marks to present word boundaries in the line"@en ;
+                             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                             rdfs:label "alt Patterning Metrical Scheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altRhymeScheme
 :altRhymeScheme rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                rdfs:comment "An alternative rhyme scheme (usually in relation with an alternative metrical scheme)" ;
-                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                rdfs:label "altRhymeScheme"@en .
+                rdfs:comment "An alternative rhyme scheme (usually in relation with an alternative metrical scheme)"@en ;
+                rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                rdfs:label "alt Rhyme Scheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaScheme
@@ -784,21 +758,18 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                 rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:domain :StanzaPattern ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                 rdfs:comment "Pattern of clausulae, that is, the ending of a line determined by the number of unstressed syllables following the last stressed one."@en ;
-                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                rdfs:label "clausulaScheme"@en .
+                rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                rdfs:label "clausula Scheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme
 :countingMetricalScheme rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
                         rdfs:range xsd:string ;
-                        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                        <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-                        rdfs:comment "Metrical scheme according to the number of syllables/morae" ;
-                        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                        rdfs:label "countingMetricalScheme"@en .
+                        rdfs:comment "Metrical scheme according to the number of syllables/morae"@en ;
+                        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                        rdfs:label "counting Metrical Scheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#ending
@@ -806,10 +777,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Rhyme ;
         rdfs:range xsd:string ;
-        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-        <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
         rdfs:comment "Contents from the last stressed vowel of the rhyme to its end"@en ;
-        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
         rdfs:label "ending"@en .
 
 
@@ -818,42 +787,36 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                 rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:domain :Rhyme ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-                rdfs:comment "Last consonant of rhyming word" ;
-                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                rdfs:label "finalConsonant"@en .
+                rdfs:comment "Last consonant of rhyming word"@en ;
+                rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                rdfs:label "final Consonant"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#grammaticalStressPattern
 :grammaticalStressPattern rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf owl:topDataProperty ;
                           rdfs:range xsd:string ;
-                          <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                          rdfs:comment "Pattern based on disposition of the expected stresses according to grammar rules. This includes the distribution of weak and strong positions" ;
-                          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                          rdfs:label "grammaticalStressPattern"@en .
+                          rdfs:comment "Pattern based on disposition of the expected stresses according to grammar rules. This includes the distribution of weak and strong positions"@en ;
+                          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                          rdfs:label "grammatical Stress Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasAnacrusis
 :hasAnacrusis rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-              rdfs:comment "If the line has one or more unstressed syllables at the beginning of a line of verse, before the reckoning of the normal meter begins" ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "hasAnacrusis"@en .
+              rdfs:comment "If the line has one or more unstressed syllables at the beginning of a line of verse, before the reckoning of the normal meter begins"@en ;
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "has Anacrusis"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasCaesura
 :hasCaesura rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:range xsd:boolean ;
-            <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-            rdfs:comment "Whether it contains any lines with a pause/break near its middle" ;
-            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-            rdfs:label "hasCaesura"@en .
+            rdfs:comment "Whether it contains any lines with a pause/break near its middle"@en ;
+            rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+            rdfs:label "has Caesura"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasMetaplasm
@@ -861,8 +824,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:range xsd:boolean ;
               rdfs:comment "If the line, word or syllable is affected by a metaplasm"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "hasMetaplasm"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "has Metaplasm"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRefrain
@@ -870,10 +833,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain :WorkPattern ;
             rdfs:range xsd:boolean ;
-            <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-            <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-            rdfs:comment "Whether the work has a refrain" ;
-            rdfs:label "hasRefrain"@en .
+            rdfs:comment "Whether the work has a refrain"@en ;
+            rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+            rdfs:label "has Refrain"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPattern
@@ -881,10 +843,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                         rdfs:subPropertyOf owl:topDataProperty ;
                         rdfs:domain :LinePattern ;
                         rdfs:range xsd:string ;
-                        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                         rdfs:comment "Initial phonemes of each word in a line, in alphabetical order to show sound repetitions"@en ;
-                        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                        rdfs:label "initialPhonemesPattern"@en .
+                        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                        rdfs:label "initial Phonemes Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPatternByManner
@@ -897,8 +858,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                             ] ;
                                 rdfs:range xsd:string ;
                                 rdfs:comment "Initial phonemes of each word in a line represented by manner, in alphabetical order to show sound repetitions"@en ;
-                                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                                rdfs:label "initialPhonemesPatternByManner"@en .
+                                rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                                rdfs:label "initial Phonemes Pattern By Manner"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#interStrophicRelations
@@ -906,11 +867,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                         rdfs:subPropertyOf owl:topDataProperty ;
                         rdfs:domain :WorkPattern ;
                         rdfs:range xsd:string ;
-                        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                        <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-                        rdfs:comment "Type of technique used to related stanzas by the repetition of sounds" ;
-                        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                        rdfs:label "interStrophicRelations"@en .
+                        rdfs:comment "Type of technique used to related stanzas by the repetition of sounds"@en ;
+                        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                        rdfs:label "inter Strophic Relations"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isCatalectic
@@ -918,10 +877,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :Foot ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
               rdfs:comment "Whether the instance at hand is the last foot of the line or hemistich and is lacking one syllable"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "isCatalectic"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "is Catalectic"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEcho
@@ -929,11 +887,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Rhyme ;
         rdfs:range xsd:boolean ;
-        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-        <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
         rdfs:comment "Whether the word in a rhyming pair under analysis is the first one (false) or the second (true)"@en ;
-        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-        rdfs:label "isEcho"@en .
+        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+        rdfs:label "is Echo"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetre
@@ -941,11 +897,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :LinePattern ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
               rdfs:comment "It has one or more syllables in addition to those found in a standard metrical unit or line of verse"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "isHypermetre"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "is Hypermetre"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetrical
@@ -953,10 +907,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :Foot ;
                  rdfs:range xsd:boolean ;
-                 <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                  rdfs:comment "Whether the instance at hand is the last foot of the line or hemistich and it contains extra syllables"@en ;
-                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                 rdfs:label "isHypermetrical"@en .
+                 rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                 rdfs:label "is Hypermetrical"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypometre
@@ -964,11 +917,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :LinePattern ;
              rdfs:range xsd:boolean ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
              rdfs:comment "It has one or more syllables less than to those found in a standard metrical unit or line of verse"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "isHypometre"@en .
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "is Hypometre"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIrregular
@@ -976,10 +927,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :Foot ;
              rdfs:range xsd:boolean ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
              rdfs:comment "Whether in comparison to the other lines, the current foot breaks a regular pattern"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "isIrregular"@en .
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "is Irregular"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIsometric
@@ -987,11 +937,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :WorkPattern ;
              rdfs:range xsd:boolean ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-             rdfs:comment "Whether the work is monometric, that is, if all lines have the same metrical analysis" ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "isIsometric"@en .
+             rdfs:comment "Whether the work is monometric, that is, if all lines have the same metrical analysis"@en ;
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "is Isometric"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIsostrophic
@@ -999,11 +947,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :WorkPattern ;
                rdfs:range xsd:boolean ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-               rdfs:comment "Whether all stanzas are metrically equivalent" ;
-               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-               rdfs:label "isIsostrophic"@en .
+               rdfs:comment "Whether all stanzas are metrically equivalent"@en ;
+               rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+               rdfs:label "is Isostrophic"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRegular
@@ -1011,19 +957,17 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
            rdfs:subPropertyOf owl:topDataProperty ;
            rdfs:domain :LinePattern ;
            rdfs:range xsd:boolean ;
-           <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-           <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
            rdfs:comment "Regular metrics"@en ;
-           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-           rdfs:label "isRegular"@en .
+           rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+           rdfs:label "is Regular"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed
 :isStressed rdf:type owl:DatatypeProperty ;
             rdfs:range xsd:boolean ;
             rdfs:comment "If the syllable or a metricla syllable has accent"@en ;
-            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-            rdfs:label "isStressed"@en .
+            rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+            rdfs:label "is Stressed"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isUnissonant
@@ -1031,11 +975,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :WorkPattern ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-              rdfs:comment "Whether all stanzas have the same rhyme" ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "isUnissonant"@en .
+              rdfs:comment "Whether all stanzas have the same rhyme"@en ;
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "is Unissonant"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#label
@@ -1043,10 +985,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
        rdfs:subPropertyOf owl:topDataProperty ;
        rdfs:domain :Rhyme ;
        rdfs:range xsd:string ;
-       <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-       <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
        rdfs:comment "String used to identify the item at hand (usually, “a”, “b”, “c”, etc.)"@en ;
-       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+       rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
        rdfs:label "label"@en .
 
 
@@ -1054,11 +994,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 :metricalNotes rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:range xsd:string ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-               rdfs:comment "Metrical commentary" ;
-               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-               rdfs:label "metricalNotes"@en .
+               rdfs:comment "Metrical commentary"@en ;
+               rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+               rdfs:label "metrical Notes"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalSymbol
@@ -1066,8 +1004,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                 rdfs:domain :Symbol ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Symbol use to define a feature in a metrical pattern"@en ;
-                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                rdfs:label "metricalSymbol"@en .
+                rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                rdfs:label "metrical Symbol"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalSymbolExplanation
@@ -1075,8 +1013,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                            rdfs:domain :Symbol ;
                            rdfs:range xsd:string ;
                            rdfs:comment "Meaning of the symbol used in a metrical pattern"@en ;
-                           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                           rdfs:label "metricalSymbolExplanation"@en .
+                           rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                           rdfs:label "metrical Symbol Explanation"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalTypeDescription
@@ -1084,11 +1022,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                          rdfs:subPropertyOf owl:topDataProperty ;
                          rdfs:domain :WorkPattern ;
                          rdfs:range xsd:string ;
-                         <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                         <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-                         rdfs:comment "Commentary on the categorisation attending to metrics" ;
-                         rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                         rdfs:label "metricalTypeDescription"@en .
+                         rdfs:comment "Commentary on the categorisation attending to metrics"@en ;
+                         rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                         rdfs:label "metrical Type Description"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfFeet
@@ -1096,11 +1032,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :LinePattern ;
               rdfs:range xsd:positiveInteger ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
               rdfs:comment "Number of feet"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "numberOfFeet"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "number Of Feet"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfLines
@@ -1108,11 +1042,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :StanzaPattern ;
                rdfs:range xsd:positiveInteger ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-               rdfs:comment "Number of lines in item" ;
-               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-               rdfs:label "numberOfLines"@en .
+               rdfs:comment "Number of lines in item"@en ;
+               rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+               rdfs:label "number Of Lines"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfMorae
@@ -1120,10 +1052,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :Foot ;
                rdfs:range xsd:positiveInteger ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                rdfs:comment "The number of morae the foot contains"@en ;
-               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-               rdfs:label "numberOfMorae"@en .
+               rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+               rdfs:label "number Of Morae"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfStanzas
@@ -1131,11 +1062,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :WorkPattern ;
                  rdfs:range xsd:positiveInteger ;
-                 <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                 <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-                 rdfs:comment "Number of stanzas" ;
-                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                 rdfs:label "numberOfStanzas"@en .
+                 rdfs:comment "Number of stanzas"@en ;
+                 rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                 rdfs:label "number Of Stanzas"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfSyllables
@@ -1143,22 +1072,18 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                    rdfs:subPropertyOf owl:topDataProperty ;
                    rdfs:domain :LinePattern ;
                    rdfs:range xsd:positiveInteger ;
-                   <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                   <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                    rdfs:comment "The exact number of syllables, that is, without paying attention to any metrical phenomena that may affect the counting"@en ;
-                   rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                   rdfs:label "numberOfSyllables"@en .
+                   rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                   rdfs:label "number Of Syllables"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#patterningMetricalScheme
 :patterningMetricalScheme rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf owl:topDataProperty ;
                           rdfs:range xsd:string ;
-                          <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                          <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-                          rdfs:comment "Metrical scheme for quantitative, tonal, accentual or accentual-syllabic metre" ;
-                          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                          rdfs:label "patterningMetricalScheme"@en .
+                          rdfs:comment "Metrical scheme for quantitative, tonal, accentual or accentual-syllabic metre"@en ;
+                          rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                          rdfs:label "patterning Metrical Scheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phonemePattern
@@ -1166,11 +1091,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                 rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:domain :LinePattern ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                 rdfs:comment "All phonemes in a line represented by their nearest written equivalents. They could be arranged in alphabetical order to show sound repetitions"@en ;
-                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                rdfs:label "phonemePattern"@en .
+                rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                rdfs:label "phoneme Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phonemePatternByManner
@@ -1178,11 +1101,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                         rdfs:subPropertyOf owl:topDataProperty ;
                         rdfs:domain :LinePattern ;
                         rdfs:range xsd:string ;
-                        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                        <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                         rdfs:comment "All phonemes in a line represented by manner of articulation. They could be arranged in alphabetical order to show sound repetitions. The coding scheme presented in one of the databases stands for the different manners of articulation of consonants, and at the same time groups together front and back vowels"@en ;
-                        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                        rdfs:label "phonemePatternByManner"@en .
+                        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                        rdfs:label "phoneme Pattern By Manner"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phoneticTranscription
@@ -1190,11 +1111,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :LinePattern ;
                        rdfs:range xsd:string ;
-                       <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                       <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                        rdfs:comment "Phonetic transcription"@en ;
-                       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                       rdfs:label "phoneticTranscription"@en .
+                       rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                       rdfs:label "phonetic Transcription"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#prefinalConsonants
@@ -1202,11 +1121,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                     rdfs:subPropertyOf owl:topDataProperty ;
                     rdfs:domain :Rhyme ;
                     rdfs:range xsd:string ;
-                    <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                    <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                     rdfs:comment "Consonants between the stressed vowel and the last consonant"@en ;
-                    rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                    rdfs:label "prefinalConsonants"@en .
+                    rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                    rdfs:label "prefinal Consonants"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeCategory
@@ -1214,11 +1131,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :Rhyme ;
                rdfs:range xsd:string ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                rdfs:comment "Categorisation of the item at hand"@en ;
-               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-               rdfs:label "rhymeCategory"@en .
+               rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+               rdfs:label "rhyme Category"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeGrapheme
@@ -1226,11 +1141,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :Rhyme ;
                rdfs:range xsd:string ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                rdfs:comment "Grapheme that represents the rhyming sounds"@en ;
-               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-               rdfs:label "rhymeGrapheme"@en .
+               rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+               rdfs:label "rhyme Grapheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymePhoneme
@@ -1238,11 +1151,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :Rhyme ;
               rdfs:range xsd:string ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
               rdfs:comment "Phonetic transcription of the rhyming sounds"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "rhymePhoneme"@en .
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "rhyme Phoneme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme
@@ -1250,11 +1161,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :Rhyme ;
              rdfs:range xsd:string ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-             rdfs:comment "A rhyme scheme is the pattern of rhymes at the end of each line of a poem or song. It is usually referred to by using letters to indicate which lines rhyme; lines designated with the same letter all rhyme with each other" ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "rhymeScheme"@en .
+             rdfs:comment "A rhyme scheme is the pattern of rhymes at the end of each line of a poem or song. It is usually referred to by using letters to indicate which lines rhyme; lines designated with the same letter all rhyme with each other"@en ;
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "rhyme Scheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeTypeProportion
@@ -1262,11 +1171,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain :WorkPattern ;
                      rdfs:range xsd:string ;
-                     <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                     <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-                     rdfs:comment "Proportion of the feminine/masculine rhymes of the poem" ;
-                     rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                     rdfs:label "rhymeTypeProportion"@en .
+                     rdfs:comment "Proportion of the feminine/masculine rhymes of the poem"@en ;
+                     rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                     rdfs:label "rhyme Type Proportion"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#scannedLine
@@ -1274,11 +1181,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :LinePattern ;
              rdfs:range xsd:string ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
              rdfs:comment "A line metrically analysed, marked up in terms of syllable division and accent"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "scannedLine"@en .
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "scanned Line"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#scheme
@@ -1286,7 +1191,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         rdfs:domain :Foot ;
         rdfs:range xsd:string ;
         rdfs:comment "Abstraction that represents the outline of the unit through a pattern. E.g. “ox(o)“ to represent the type of syllables"@en ;
-        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
         rdfs:label "scheme"@en .
 
 
@@ -1295,12 +1200,15 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                 rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> ;
                 rdfs:range xsd:integer ;
                 rdfs:comment "Position of the stressed syllable from the end of the word"@en ;
-                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                rdfs:label "stressPosition"@en .
+                rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                rdfs:label "stress Position"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme
-:syllabicMetricalScheme rdf:type owl:DatatypeProperty .
+:syllabicMetricalScheme rdf:type owl:DatatypeProperty ;
+                        rdfs:comment "Metrical Scheme based on Syllables"@en ;
+                        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                        rdfs:label "syllabic Metrical Scheme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme
@@ -1308,11 +1216,9 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :LinePattern ;
                  rdfs:range xsd:string ;
-                 <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                 <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                  rdfs:comment "Linguistic properties of the vowels of the line"@en ;
-                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                 rdfs:label "vowelTypeScheme"@en .
+                 rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                 rdfs:label "vowel Type Scheme"@en .
 
 
 #################################################################
@@ -1331,7 +1237,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                                                                    owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                                                                        owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
+                                                                                                                        owl:hasValue <http://postdata.linhd.uned.es/kos/rhyme-matching-type>
                                                                                                                       ]
                                                                                                                     ) ;
                                                                                                  rdf:type owl:Class
@@ -1354,18 +1260,16 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                       rdf:type owl:Class
                                     ]
                       ] ;
-      <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-      <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
       rdfs:comment "A unit of poetic meter consisting of stressed and unstressed syllables or long and short syllables in any of various set combinations"@en ;
+      rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
       rdfs:label "Foot"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision
 :FootDivision rdf:type owl:Class ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
-              rdfs:comment "Unit smaller than Foot." ;
-              rdfs:label "FootDivision"@en .
+              rdfs:comment "Unit smaller than Foot."@en ;
+              rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+              rdfs:label "Foot Division"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern
@@ -1428,11 +1332,10 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onDataRange xsd:string
                              ] ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
              rdfs:comment """The prosodic analysis using a Line as the unit of reference
 Eg.: The number of syllables of the Line"""@en ;
-             rdfs:label "LinePattern"@en .
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "Line Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm
@@ -1440,7 +1343,7 @@ Eg.: The number of syllables of the Line"""@en ;
            rdfs:comment """A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.
 Some examples are dieresis, syneresis, sinalefa or hiatus.
 There is a pdprosodic:typeOfMetaplasm property whose range of values is a controlled metaplasm type vocabulary, which allows to specify the nature of it."""@en ;
-           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+           rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
            rdfs:label "Metaplasm"@en .
 
 
@@ -1451,37 +1354,38 @@ There is a pdprosodic:typeOfMetaplasm property whose range of values is a contro
                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onDataRange xsd:string
                                   ] ;
-                  <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                  <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
                   rdfs:comment """The notation employed to represent a metrical pattern.
 Eg.: The definition of the plus sign to encode strong positions."""@en ;
-                  rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                  rdfs:label "MetricalEncoding"@en .
+                  rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                  rdfs:label "Metrical Encoding"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable
 :MetricalSyllable rdf:type owl:Class ;
                   rdfs:comment "Metric syllable built by applying metaplasms to syllables."@en ;
-                  rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                  rdfs:label "MetricalSyllable"@en .
+                  rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+                  rdfs:label "Metrical Syllable"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern
-:Pattern rdf:type owl:Class .
+:Pattern rdf:type owl:Class ;
+         rdfs:comment "The prosodic analysis using a Line, Stanza or Work as the unit of reference"@en ;
+         rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+         rdfs:label "Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme
 :Rhyme rdf:type owl:Class ;
-       <http://purl.org/dc/elements/1.1/creator> "mluisadiez"@en ;
        rdfs:comment "Repetition of similar sounding words occurring at the end of lines in poems or songs"@en ;
+       rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
        rdfs:label "Rhyme"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#RhymeMatch
 :RhymeMatch rdf:type owl:Class ;
             rdfs:comment "Entity to define the correspondences between rhyming words"@en ;
-            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-            rdfs:label "RhymeMatch"@en .
+            rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+            rdfs:label "Rhyme Match"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern
@@ -1493,7 +1397,7 @@ Eg.: The definition of the plus sign to encode strong positions."""@en ;
                                  owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                     [ rdf:type owl:Restriction ;
                                                                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/clausulaScheme-type>
+                                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/clausula-scheme-type>
                                                                     ]
                                                                   ) ;
                                                rdf:type owl:Class
@@ -1529,7 +1433,7 @@ Eg.: The definition of the plus sign to encode strong positions."""@en ;
                                  owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                     [ rdf:type owl:Restriction ;
                                                                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
+                                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/rhyme-matching-type>
                                                                     ]
                                                                   ) ;
                                                rdf:type owl:Class
@@ -1575,17 +1479,16 @@ Eg.: The definition of the plus sign to encode strong positions."""@en ;
                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:string
                                ] ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
                rdfs:comment """The prosodic analysis using a Stanza as the unit of reference
 Eg.: The number of lines of a Stanza or its categorisation according to metrics (such as “quatrain”)"""@en ;
-               rdfs:label "StanzaPattern"@en .
+               rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+               rdfs:label "Stanza Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Symbol
 :Symbol rdf:type owl:Class ;
         rdfs:comment "Each element of the notation used to describe a metrical pattern"@en ;
-        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+        rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
         rdfs:label "Symbol"@en .
 
 
@@ -1610,7 +1513,7 @@ Eg.: The number of lines of a Stanza or its categorisation according to metrics 
                                owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                    owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
+                                                                    owl:hasValue <http://postdata.linhd.uned.es/kos/rhyme-matching-type>
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
@@ -1671,11 +1574,10 @@ Eg.: The number of lines of a Stanza or its categorisation according to metrics 
                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onDataRange xsd:string
                              ] ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
              rdfs:comment """The prosodic analysis using a Redaction as the unit of reference
 Eg.: The complete distribution of accented syllables of a work"""@en ;
-             rdfs:label "WorkPattern"@en .
+             rdfs:isDefinedBy <http://postdata.linhd.uned.es/ontology/postdata-prosodicElements> ;
+             rdfs:label "Work Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line
@@ -1698,7 +1600,7 @@ Eg.: The complete distribution of accented syllables of a work"""@en ;
                                                                                               owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                                                                                  [ rdf:type owl:Restriction ;
                                                                                                                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                                                                                   owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
+                                                                                                                                   owl:hasValue <http://postdata.linhd.uned.es/kos/rhyme-matching-type>
                                                                                                                                  ]
                                                                                                                                ) ;
                                                                                                             rdf:type owl:Class
@@ -1727,9 +1629,9 @@ Eg.: The complete distribution of accented syllables of a work"""@en ;
                                                       <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://postdata.linhd.uned.es/kos/clausulaScheme-type
-<http://postdata.linhd.uned.es/kos/clausulaScheme-type> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://postdata.linhd.uned.es/kos/clausula-scheme-type
+<http://postdata.linhd.uned.es/kos/clausula-scheme-type> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://postdata.linhd.uned.es/kos/feet-type
@@ -1742,9 +1644,9 @@ Eg.: The complete distribution of accented syllables of a work"""@en ;
                                                        <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://postdata.linhd.uned.es/kos/footUnit-type
-<http://postdata.linhd.uned.es/kos/footUnit-type> rdf:type owl:NamedIndividual ,
-                                                           <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://postdata.linhd.uned.es/kos/foot-unit-type
+<http://postdata.linhd.uned.es/kos/foot-unit-type> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://postdata.linhd.uned.es/kos/metaplasm-type
@@ -1771,14 +1673,14 @@ Eg.: The complete distribution of accented syllables of a work"""@en ;
                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://postdata.linhd.uned.es/kos/rhymeDisposition-type
-<http://postdata.linhd.uned.es/kos/rhymeDisposition-type> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://postdata.linhd.uned.es/kos/rhyme-disposition-type
+<http://postdata.linhd.uned.es/kos/rhyme-disposition-type> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://postdata.linhd.uned.es/kos/rhymeMatching-type
-<http://postdata.linhd.uned.es/kos/rhymeMatching-type> rdf:type owl:NamedIndividual ,
-                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://postdata.linhd.uned.es/kos/rhyme-matching-type
+<http://postdata.linhd.uned.es/kos/rhyme-matching-type> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://postdata.linhd.uned.es/kos/versification-type
