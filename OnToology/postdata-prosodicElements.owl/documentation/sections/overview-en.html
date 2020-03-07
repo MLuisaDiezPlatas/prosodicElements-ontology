@@ -1,6 +1,4 @@
-<html><<h2 id="overv" class="list">postdata-prosodicElements ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<p> The diagram below describe the main classes and properties in the postdata-structuralElements ontology</p>
-<div style="text-align: center"><img src="http://postdata.linhd.uned.es/ontology/prosodic.png" width="90%"/></div>
+<html><h2 id="overv" class="list">postdata-structural ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -11,11 +9,11 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#FootDivision"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision">FootDivision</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision">Foot Division</a>
    </li>
    <li>
       <a href="#LinePattern"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern">LinePattern</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern">Line Pattern</a>
    </li>
    <li>
       <a href="#Metaplasm"
@@ -23,11 +21,15 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#MetricalEncoding"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalEncoding">MetricalEncoding</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalEncoding">Metrical Encoding</a>
    </li>
    <li>
       <a href="#MetricalSyllable"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable">MetricalSyllable</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable">Metrical Syllable</a>
+   </li>
+   <li>
+      <a href="#Pattern"
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern">Pattern</a>
    </li>
    <li>
       <a href="#Rhyme"
@@ -35,11 +37,11 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#RhymeMatch"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#RhymeMatch">RhymeMatch</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#RhymeMatch">Rhyme Match</a>
    </li>
    <li>
       <a href="#StanzaPattern"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern">StanzaPattern</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern">Stanza Pattern</a>
    </li>
    <li>
       <a href="#Symbol"
@@ -47,12 +49,12 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#WorkPattern"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern">WorkPattern</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern">Work Pattern</a>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
       <a href="#affectsFirst"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst">affectsFirst</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst">affects First</a>
    </li>
    <li>
       <a href="#analyses"
@@ -64,7 +66,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#clausulaSchemeType"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaSchemeType">clausulaSchemeType</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaSchemeType">clausula Scheme Type</a>
    </li>
    <li>
       <a href="#corresponds"
@@ -76,29 +78,43 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#feetType"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#feetType">feetType</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#feetType">feet Type</a>
    </li>
    <li>
       <a href="#footType"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#footType">footType</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#footType">foot Type</a>
    </li>
    <li>
       <a href="#hasFirstFoot"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstFoot">hasFirstFoot</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstFoot">has First Foot</a>
    </li>
    <li>
       <a href="#hasFirstUnit"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstUnit">hasFirstUnit</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstUnit">has First Unit</a>
    </li>
    <li>
       <a href="#hasRhymeWord"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord">hasRhymeWord</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord">has Rhyme Word</a>
+   </li>
+   <li>
+      <a href="#isAffectedBy"
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy">is Affected By</a>
    </li>
    <li>
       <a href="#isAnalysedThrough"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough">
-         <span>is analysed through</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough">is Analysed Through</a>
+   </li>
+   <li>
+      <a href="#isEchoOf"
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf">is Echo Of</a>
+   </li>
+   <li>
+      <a href="#isEmployedIn"
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEmployedIn">is Employed In</a>
+   </li>
+   <li>
+      <a href="#isFirstFoot"
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstFoot">is First Foot</a>
    </li>
    <li>
       <a href="#isFirstUnit"
@@ -107,36 +123,20 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#isAffectedBy"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAffectedBy">isAffectedBy</a>
-   </li>
-   <li>
-      <a href="#isEchoOf"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEchoOf">isEchoOf</a>
-   </li>
-   <li>
-      <a href="#isEmployedIn"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEmployedIn">isEmployedIn</a>
-   </li>
-   <li>
-      <a href="#isFirstFoot"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFirstFoot">isFirstFoot</a>
-   </li>
-   <li>
       <a href="#isFormedWith"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith">isFormedWith</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isFormedWith">is Formed With</a>
    </li>
    <li>
       <a href="#isPresentIn"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isPresentIn">isPresentIn</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isPresentIn">is Present In</a>
    </li>
    <li>
       <a href="#isRhymeWord"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRhymeWord">isRhymeWord</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRhymeWord">is Rhyme Word</a>
    </li>
    <li>
       <a href="#isUsedBy"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isUsedBy">isUsedBy</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isUsedBy">is Used By</a>
    </li>
    <li>
       <a href="#matches"
@@ -144,31 +144,31 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#metricalCategory"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalCategory">metricalCategory</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalCategory">metrical Category</a>
    </li>
    <li>
       <a href="#metricalComplexity"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalComplexity">metricalComplexity</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalComplexity">metrical Complexity</a>
    </li>
    <li>
       <a href="#metricalContext"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalContext">metricalContext</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalContext">metrical Context</a>
    </li>
    <li>
       <a href="#metricalType"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalType">metricalType</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalType">metrical Type</a>
    </li>
    <li>
       <a href="#nextFoot"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextFoot">nextFoot</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextFoot">next Foot</a>
    </li>
    <li>
       <a href="#nextFootAfterCaesura"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextFootAfterCaesura">nextFootAfterCaesura</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextFootAfterCaesura">next Foot After Caesura</a>
    </li>
    <li>
       <a href="#nextUnit"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextUnit">nextUnit</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextUnit">next Unit</a>
    </li>
    <li>
       <a href="#presents"
@@ -176,43 +176,43 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#presentsRhymeMatching"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presentsRhymeMatching">presentsRhymeMatching</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presentsRhymeMatching">presents Rhyme Matching</a>
    </li>
    <li>
       <a href="#previousFoot"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousFoot">previousFoot</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousFoot">previous Foot</a>
    </li>
    <li>
       <a href="#previousFootBeforeCaesura"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousFootBeforeCaesura">previousFootBeforeCaesura</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousFootBeforeCaesura">previous Foot Before Caesura</a>
    </li>
    <li>
       <a href="#previousUnit"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousUnit">previousUnit</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#previousUnit">previous Unit</a>
    </li>
    <li>
       <a href="#rhymeDispositionType"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeDispositionType">rhymeDispositionType</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeDispositionType">rhyme Disposition Type</a>
    </li>
    <li>
       <a href="#rhymesWith"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymesWith">rhymesWith</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymesWith">rhymes With</a>
    </li>
    <li>
       <a href="#successIn"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#successIn">successIn</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#successIn">success In</a>
    </li>
    <li>
       <a href="#typeOfMetaplasm"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#typeOfMetaplasm">typeOfMetaplasm</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#typeOfMetaplasm">type Of Metaplasm</a>
    </li>
    <li>
       <a href="#typeOfRhymeMatching"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#typeOfRhymeMatching">typeOfRhymeMatching</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#typeOfRhymeMatching">type Of Rhyme Matching</a>
    </li>
    <li>
       <a href="#unitType"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#unitType">unitType</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#unitType">unit Type</a>
    </li>
    <li>
       <a href="#uses"
@@ -220,36 +220,36 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#versificationType"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#versificationType">versificationType</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#versificationType">versification Type</a>
    </li>
 </ul><h4>Data Properties</h4><ul class="hlist">
    <li>
       <a href="#accentedVowels"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowels">accentedVowels</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowels">accented Vowels</a>
    </li>
    <li>
       <a href="#accentedVowelsPattern"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowelsPattern">accentedVowelsPattern</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowelsPattern">accented Vowels Pattern</a>
    </li>
    <li>
       <a href="#altCountingMetricalScheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme">altCountingMetricalScheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme">alt Counting Metrical Scheme</a>
    </li>
    <li>
       <a href="#altPatterningMetricalScheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme">altPatterningMetricalScheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme">alt Patterning Metrical Scheme</a>
    </li>
    <li>
       <a href="#altRhymeScheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altRhymeScheme">altRhymeScheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altRhymeScheme">alt Rhyme Scheme</a>
    </li>
    <li>
       <a href="#clausulaScheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaScheme">clausulaScheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaScheme">clausula Scheme</a>
    </li>
    <li>
       <a href="#countingMetricalScheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme">countingMetricalScheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme">counting Metrical Scheme</a>
    </li>
    <li>
       <a href="#ending"
@@ -257,83 +257,83 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#finalConsonant"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#finalConsonant">finalConsonant</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#finalConsonant">final Consonant</a>
    </li>
    <li>
       <a href="#grammaticalStressPattern"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#grammaticalStressPattern">grammaticalStressPattern</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#grammaticalStressPattern">grammatical Stress Pattern</a>
    </li>
    <li>
       <a href="#hasAnacrusis"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasAnacrusis">hasAnacrusis</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasAnacrusis">has Anacrusis</a>
    </li>
    <li>
       <a href="#hasCaesura"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasCaesura">hasCaesura</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasCaesura">has Caesura</a>
    </li>
    <li>
       <a href="#hasMetaplasm"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasMetaplasm">hasMetaplasm</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasMetaplasm">has Metaplasm</a>
    </li>
    <li>
       <a href="#hasRefrain"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRefrain">hasRefrain</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRefrain">has Refrain</a>
    </li>
    <li>
       <a href="#initialPhonemesPattern"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPattern">initialPhonemesPattern</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPattern">initial Phonemes Pattern</a>
    </li>
    <li>
       <a href="#initialPhonemesPatternByManner"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPatternByManner">initialPhonemesPatternByManner</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPatternByManner">initial Phonemes Pattern By Manner</a>
    </li>
    <li>
       <a href="#interStrophicRelations"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#interStrophicRelations">interStrophicRelations</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#interStrophicRelations">inter Strophic Relations</a>
    </li>
    <li>
       <a href="#isCatalectic"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isCatalectic">isCatalectic</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isCatalectic">is Catalectic</a>
    </li>
    <li>
       <a href="#isEcho"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEcho">isEcho</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEcho">is Echo</a>
    </li>
    <li>
       <a href="#isHypermetre"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetre">isHypermetre</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetre">is Hypermetre</a>
    </li>
    <li>
       <a href="#isHypermetrical"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetrical">isHypermetrical</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetrical">is Hypermetrical</a>
    </li>
    <li>
       <a href="#isHypometre"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypometre">isHypometre</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypometre">is Hypometre</a>
    </li>
    <li>
       <a href="#isIrregular"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIrregular">isIrregular</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIrregular">is Irregular</a>
    </li>
    <li>
       <a href="#isIsometric"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIsometric">isIsometric</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIsometric">is Isometric</a>
    </li>
    <li>
       <a href="#isIsostrophic"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIsostrophic">isIsostrophic</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIsostrophic">is Isostrophic</a>
    </li>
    <li>
       <a href="#isRegular"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRegular">isRegular</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRegular">is Regular</a>
    </li>
    <li>
       <a href="#isStressed"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed">isStressed</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isStressed">is Stressed</a>
    </li>
    <li>
       <a href="#isUnissonant"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isUnissonant">isUnissonant</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isUnissonant">is Unissonant</a>
    </li>
    <li>
       <a href="#label"
@@ -341,83 +341,83 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#metricalNotes"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalNotes">metricalNotes</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalNotes">metrical Notes</a>
    </li>
    <li>
       <a href="#metricalSymbol"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalSymbol">metricalSymbol</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalSymbol">metrical Symbol</a>
    </li>
    <li>
       <a href="#metricalSymbolExplanation"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalSymbolExplanation">metricalSymbolExplanation</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalSymbolExplanation">metrical Symbol Explanation</a>
    </li>
    <li>
       <a href="#metricalTypeDescription"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalTypeDescription">metricalTypeDescription</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalTypeDescription">metrical Type Description</a>
    </li>
    <li>
       <a href="#numberOfFeet"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfFeet">numberOfFeet</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfFeet">number Of Feet</a>
    </li>
    <li>
       <a href="#numberOfLines"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfLines">numberOfLines</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfLines">number Of Lines</a>
    </li>
    <li>
       <a href="#numberOfMorae"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfMorae">numberOfMorae</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfMorae">number Of Morae</a>
    </li>
    <li>
       <a href="#numberOfStanzas"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfStanzas">numberOfStanzas</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfStanzas">number Of Stanzas</a>
    </li>
    <li>
       <a href="#numberOfSyllables"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfSyllables">numberOfSyllables</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfSyllables">number Of Syllables</a>
    </li>
    <li>
       <a href="#patterningMetricalScheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#patterningMetricalScheme">patterningMetricalScheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#patterningMetricalScheme">patterning Metrical Scheme</a>
    </li>
    <li>
       <a href="#phonemePattern"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phonemePattern">phonemePattern</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phonemePattern">phoneme Pattern</a>
    </li>
    <li>
       <a href="#phonemePatternByManner"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phonemePatternByManner">phonemePatternByManner</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phonemePatternByManner">phoneme Pattern By Manner</a>
    </li>
    <li>
       <a href="#phoneticTranscription"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phoneticTranscription">phoneticTranscription</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phoneticTranscription">phonetic Transcription</a>
    </li>
    <li>
       <a href="#prefinalConsonants"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#prefinalConsonants">prefinalConsonants</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#prefinalConsonants">prefinal Consonants</a>
    </li>
    <li>
       <a href="#rhymeCategory"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeCategory">rhymeCategory</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeCategory">rhyme Category</a>
    </li>
    <li>
       <a href="#rhymeGrapheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeGrapheme">rhymeGrapheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeGrapheme">rhyme Grapheme</a>
    </li>
    <li>
       <a href="#rhymePhoneme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymePhoneme">rhymePhoneme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymePhoneme">rhyme Phoneme</a>
    </li>
    <li>
       <a href="#rhymeScheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme">rhymeScheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme">rhyme Scheme</a>
    </li>
    <li>
       <a href="#rhymeTypeProportion"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeTypeProportion">rhymeTypeProportion</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeTypeProportion">rhyme Type Proportion</a>
    </li>
    <li>
       <a href="#scannedLine"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#scannedLine">scannedLine</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#scannedLine">scanned Line</a>
    </li>
    <li>
       <a href="#scheme"
@@ -425,11 +425,15 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#stressPosition"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition">stressPosition</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#stressPosition">stress Position</a>
+   </li>
+   <li>
+      <a href="#syllabicMetricalScheme"
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme">syllabic Metrical Scheme</a>
    </li>
    <li>
       <a href="#vowelTypeScheme"
-         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme">vowelTypeScheme</a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme">vowel Type Scheme</a>
    </li>
 </ul><h4>Named Individuals</h4><ul class="hlist">
    <li>
@@ -438,8 +442,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://postdata.linhd.uned.es/kos/clausulaScheme-type"
-         title="http://postdata.linhd.uned.es/kos/clausulaScheme-type">
+      <a href="#http://postdata.linhd.uned.es/kos/clausula-scheme-type"
+         title="http://postdata.linhd.uned.es/kos/clausula-scheme-type">
          <span>clausula scheme type</span>
       </a>
    </li>
@@ -454,7 +458,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://postdata.linhd.uned.es/kos/footUnit-type" title="http://postdata.linhd.uned.es/kos/footUnit-type">
+      <a href="#http://postdata.linhd.uned.es/kos/foot-unit-type"
+         title="http://postdata.linhd.uned.es/kos/foot-unit-type">
          <span>foot unit type</span>
       </a>
    </li>
@@ -482,14 +487,14 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://postdata.linhd.uned.es/kos/rhymeDisposition-type"
-         title="http://postdata.linhd.uned.es/kos/rhymeDisposition-type">
+      <a href="#http://postdata.linhd.uned.es/kos/rhyme-disposition-type"
+         title="http://postdata.linhd.uned.es/kos/rhyme-disposition-type">
          <span>rhyme disposition type</span>
       </a>
    </li>
    <li>
-      <a href="#http://postdata.linhd.uned.es/kos/rhymeMatching-type"
-         title="http://postdata.linhd.uned.es/kos/rhymeMatching-type">
+      <a href="#http://postdata.linhd.uned.es/kos/rhyme-matching-type"
+         title="http://postdata.linhd.uned.es/kos/rhyme-matching-type">
          <span>rhyme matching type</span>
       </a>
    </li>

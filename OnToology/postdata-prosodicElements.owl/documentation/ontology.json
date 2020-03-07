@@ -17,20 +17,10 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid100",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid102"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid102",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/rhymeMatching-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/rhyme-matching-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -57,7 +47,7 @@
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/rhymeMatching-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/rhyme-matching-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -79,7 +69,7 @@
   "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/rhymeDisposition-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/rhyme-disposition-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -97,7 +87,7 @@
   "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/rhymeMatching-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/rhyme-matching-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -106,7 +96,7 @@
   "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/footUnit-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/foot-unit-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -124,7 +114,7 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/clausulaScheme-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/clausula-scheme-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -140,23 +130,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowelsPattern"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPatternByManner"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -169,58 +146,58 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid24"
+    "@id" : "_:genid23"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presentsRhymeMatching"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid26"
+      "@id" : "_:genid25"
     } ]
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/rhymeMatching-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/rhyme-matching-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid29"
+    "@id" : "_:genid28"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausula"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid31"
+      "@id" : "_:genid30"
     } ]
   } ]
 }, {
@@ -233,7 +210,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://postdata.linhd.uned.es/kos/clausula"
@@ -242,30 +219,30 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid34"
+    "@id" : "_:genid33"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#feetType"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid36"
+      "@id" : "_:genid35"
     } ]
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://postdata.linhd.uned.es/kos/feet-type"
@@ -274,7 +251,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -287,7 +264,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowels"
   } ]
 }, {
-  "@id" : "_:genid39",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -298,6 +275,19 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -319,7 +309,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme"
   } ]
 }, {
   "@id" : "_:genid41",
@@ -332,23 +322,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme"
-  } ]
-}, {
-  "@id" : "_:genid42",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#grammaticalStressPattern"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -361,7 +338,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasAnacrusis"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -374,7 +351,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasCaesura"
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -387,7 +364,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalNotes"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -400,7 +377,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#patterningMetricalScheme"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -413,26 +390,26 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalNotes"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid49"
+    "@id" : "_:genid48"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaSchemeType"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid51"
+      "@id" : "_:genid50"
     } ]
   } ]
 }, {
@@ -448,39 +425,39 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/clausulaScheme-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/clausula-scheme-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid53",
+  "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid54"
+    "@id" : "_:genid53"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#feetType"
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid56"
+      "@id" : "_:genid55"
     } ]
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://postdata.linhd.uned.es/kos/feet-type"
@@ -489,30 +466,30 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid59"
+    "@id" : "_:genid58"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalType"
   } ]
 }, {
-  "@id" : "_:genid59",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid61"
+      "@id" : "_:genid60"
     } ]
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://postdata.linhd.uned.es/kos/metrical-type"
@@ -521,36 +498,49 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid64"
+    "@id" : "_:genid63"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presentsRhymeMatching"
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid66"
+      "@id" : "_:genid65"
     } ]
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/rhymeMatching-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/rhyme-matching-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme"
   } ]
 }, {
   "@id" : "_:genid68",
@@ -563,7 +553,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme"
   } ]
 }, {
   "@id" : "_:genid69",
@@ -576,7 +566,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altRhymeScheme"
   } ]
 }, {
   "@id" : "_:genid70",
@@ -589,23 +579,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altRhymeScheme"
-  } ]
-}, {
-  "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme"
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -618,7 +595,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasCaesura"
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -631,7 +608,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalNotes"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -644,7 +621,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#patterningMetricalScheme"
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -657,30 +634,30 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme"
   } ]
 }, {
-  "@id" : "_:genid76",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid77"
+    "@id" : "_:genid76"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalType"
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid79"
+      "@id" : "_:genid78"
     } ]
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://postdata.linhd.uned.es/kos/metrical-type"
@@ -689,39 +666,39 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid82"
+    "@id" : "_:genid81"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presentsRhymeMatching"
   } ]
 }, {
-  "@id" : "_:genid82",
+  "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid84"
+      "@id" : "_:genid83"
     } ]
   } ]
 }, {
-  "@id" : "_:genid84",
+  "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/rhymeMatching-type"
+    "@id" : "http://postdata.linhd.uned.es/kos/rhyme-matching-type"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -734,7 +711,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#notes"
   } ]
 }, {
-  "@id" : "_:genid87",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -747,7 +724,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme"
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid87",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -760,7 +737,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme"
   } ]
 }, {
-  "@id" : "_:genid89",
+  "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -771,6 +748,19 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altRhymeScheme"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme"
   } ]
 }, {
   "@id" : "_:genid9",
@@ -792,23 +782,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme"
-  } ]
-}, {
-  "@id" : "_:genid91",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#grammaticalStressPattern"
   } ]
 }, {
-  "@id" : "_:genid92",
+  "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -821,7 +798,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasAnacrusis"
   } ]
 }, {
-  "@id" : "_:genid93",
+  "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -834,7 +811,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasCaesura"
   } ]
 }, {
-  "@id" : "_:genid94",
+  "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -847,7 +824,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalNotes"
   } ]
 }, {
-  "@id" : "_:genid95",
+  "@id" : "_:genid94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -860,7 +837,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#patterningMetricalScheme"
   } ]
 }, {
-  "@id" : "_:genid96",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -873,7 +850,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme"
   } ]
 }, {
-  "@id" : "_:genid97",
+  "@id" : "_:genid96",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -886,7 +863,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"
   } ]
 }, {
-  "@id" : "_:genid98",
+  "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -899,17 +876,27 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough"
   } ]
 }, {
-  "@id" : "_:genid99",
+  "@id" : "_:genid98",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid100"
+    "@id" : "_:genid99"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presentsRhymeMatching"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid101"
+    } ]
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#license",
@@ -2318,7 +2305,7 @@
   "@id" : "http://postdata.linhd.uned.es/kos/clausula",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/kos/clausulaScheme-type",
+  "@id" : "http://postdata.linhd.uned.es/kos/clausula-scheme-type",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/kos/feet-type",
@@ -2327,7 +2314,7 @@
   "@id" : "http://postdata.linhd.uned.es/kos/foot-type",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/kos/footUnit-type",
+  "@id" : "http://postdata.linhd.uned.es/kos/foot-unit-type",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/kos/metaplasm-type",
@@ -2345,10 +2332,10 @@
   "@id" : "http://postdata.linhd.uned.es/kos/metrical-type",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/kos/rhymeDisposition-type",
+  "@id" : "http://postdata.linhd.uned.es/kos/rhyme-disposition-type",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/kos/rhymeMatching-type",
+  "@id" : "http://postdata.linhd.uned.es/kos/rhyme-matching-type",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/kos/versification-type",
@@ -2356,40 +2343,33 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction",
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid22"
+    "@id" : "_:genid21"
   }, {
-    "@id" : "_:genid23"
+    "@id" : "_:genid22"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributors" : [ {
-    "@language" : "en",
     "@value" : "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"
   }, {
-    "@language" : "en",
     "@value" : "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"
   }, {
-    "@language" : "en",
     "@value" : "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/"
   }, {
-    "@language" : "en",
     "@value" : "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@language" : "en",
     "@value" : "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X"
   }, {
-    "@language" : "en",
-    "@value" : "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147"
+    "@value" : "Mª Luisa Díez Platas\nhttps://orcid.org/0000-0002-9416-3147"
   } ],
   "http://purl.org/dc/elements/1.1/date" : [ {
-    "@language" : "en",
-    "@value" : "2019-07-12"
+    "@value" : "2020-02-22"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
-    "@value" : "This ontology contains the classes and properties necessary to structure the information of a prosodic analysis, that is to say, the information obtained from the study of the meters and the forms of versification.\nIn poetry, the metric is the basic rhythmic structure of the verses of a poetic work."
+    "@value" : "This ontology contains the classes and properties needed to provide information of a prosodic analysis, that is, the information obtained from the study of the meters and the forms of versification. In poetry, the metric is the basic rhythmic structure of the verses of a poetic work."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
@@ -2397,37 +2377,32 @@
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@language" : "en",
-    "@value" : "POSTDATA Project\n\n“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”\nPrincipal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812\nTechnical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"
-  }, {
     "@value" : "POSTDATA Project"
+  }, {
+    "@language" : "en",
+    "@value" : "POSTDATA Project\n\n“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”\nPrincipal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812\nTechnical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@language" : "en",
     "@value" : "pdprosodic"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "V1.0"
+    "@value" : "V1.1"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#license" : [ {
-    "@language" : "en",
     "@value" : "https://creativecommons.org/licenses/by/4.0/"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:37:24Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A unit of poetic meter consisting of stressed and unstressed syllables or long and short syllables in any of various set combinations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2436,47 +2411,42 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/linguistics/gold/Foot"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid27"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:37:24Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Unit smaller than Foot."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "FootDivision"
+    "@value" : "Foot Division"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:37:24Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The prosodic analysis using a Line as the unit of reference\nEg.: The number of syllables of the Line"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "LinePattern"
+    "@value" : "Line Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   }, {
-    "@id" : "_:genid33"
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid37"
   }, {
     "@id" : "_:genid38"
   }, {
@@ -2493,8 +2463,6 @@
     "@id" : "_:genid44"
   }, {
     "@id" : "_:genid45"
-  }, {
-    "@id" : "_:genid46"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm",
@@ -2504,8 +2472,7 @@
     "@value" : "A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.\nSome examples are dieresis, syneresis, sinalefa or hiatus.\nThere is a pdprosodic:typeOfMetaplasm property whose range of values is a controlled metaplasm type vocabulary, which allows to specify the nature of it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2514,27 +2481,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalEncoding",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:37:24Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The notation employed to represent a metrical pattern.\nEg.: The definition of the plus sign to encode strong positions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "MetricalEncoding"
+    "@value" : "Metrical Encoding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid47"
+    "@id" : "_:genid46"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable",
@@ -2544,26 +2503,35 @@
     "@value" : "Metric syllable built by applying metaplasms to syllables."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "MetricalSyllable"
+    "@value" : "Metrical Syllable"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The prosodic analysis using a Line, Stanza or Work as the unit of reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pattern"
+  } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@language" : "en",
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Repetition of similar sounding words occurring at the end of lines in poems or songs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2577,41 +2545,38 @@
     "@value" : "Entity to define the correspondences between rhyming words"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "RhymeMatch"
+    "@value" : "Rhyme Match"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:37:24Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The prosodic analysis using a Stanza as the unit of reference\nEg.: The number of lines of a Stanza or its categorisation according to metrics (such as “quatrain”)"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "StanzaPattern"
+    "@value" : "Stanza Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   }, {
-    "@id" : "_:genid48"
+    "@id" : "_:genid47"
   }, {
-    "@id" : "_:genid53"
+    "@id" : "_:genid52"
   }, {
-    "@id" : "_:genid58"
+    "@id" : "_:genid57"
   }, {
-    "@id" : "_:genid63"
+    "@id" : "_:genid62"
+  }, {
+    "@id" : "_:genid67"
   }, {
     "@id" : "_:genid68"
   }, {
@@ -2626,8 +2591,6 @@
     "@id" : "_:genid73"
   }, {
     "@id" : "_:genid74"
-  }, {
-    "@id" : "_:genid75"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Symbol",
@@ -2637,8 +2600,7 @@
     "@value" : "Each element of the notation used to describe a metrical pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2647,27 +2609,25 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:37:24Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The prosodic analysis using a Redaction as the unit of reference\nEg.: The complete distribution of accented syllables of a work"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "WorkPattern"
+    "@value" : "Work Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   }, {
-    "@id" : "_:genid76"
+    "@id" : "_:genid75"
   }, {
-    "@id" : "_:genid81"
+    "@id" : "_:genid80"
+  }, {
+    "@id" : "_:genid85"
   }, {
     "@id" : "_:genid86"
   }, {
@@ -2688,15 +2648,10 @@
     "@id" : "_:genid94"
   }, {
     "@id" : "_:genid95"
-  }, {
-    "@id" : "_:genid96"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowels",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Stressed vowels in the order in which they occur in the text"
@@ -2705,47 +2660,34 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "accentedVowels"
+    "@value" : "accented Vowels"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#accentedVowelsPattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Stressed vowels in a line, in alphabetical order to show sound repetitions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
-  }, {
-    "@id" : "_:genid20"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "accentedVowelsPattern"
+    "@value" : "accented Vowels Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#affectsFirst",
@@ -2758,48 +2700,42 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "affectsFirst"
+    "@value" : "affects First"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altCountingMetricalScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Alternative syllabic/moraic metrical schemae (e.g. long lines with caesura opposite to short lines)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "altCountingMetricalScheme"
+    "@value" : "alt Counting Metrical Scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altPatterningMetricalScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Distribution of stresses/long syllables, but, for instance, with the addition of punctuation marks to present word boundaries in the line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "altPatterningMetricalScheme"
+    "@value" : "alt Patterning Metrical Scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2810,19 +2746,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#altRhymeScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "An alternative rhyme scheme (usually in relation with an alternative metrical scheme)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "altRhymeScheme"
+    "@value" : "alt Rhyme Scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2841,8 +2774,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2862,8 +2794,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausula"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2877,9 +2808,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#clausulaScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Pattern of clausulae, that is, the ending of a line determined by the number of unstressed syllables following the last stressed one."
@@ -2888,12 +2816,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "clausulaScheme"
+    "@value" : "clausula Scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2912,12 +2839,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "clausulaSchemeType"
+    "@value" : "clausula Scheme Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -2935,8 +2861,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#RhymeMatch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2951,23 +2876,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#countingMetricalScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Metrical scheme according to the number of syllables/morae"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "countingMetricalScheme"
+    "@value" : "counting Metrical Scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2986,8 +2904,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalEncoding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3002,13 +2919,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#ending",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Contents from the last stressed vowel of the rhyme to its end"
@@ -3017,8 +2927,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3038,12 +2947,11 @@
     "@value" : "Categorisation of the stanza or line according to the type of feet"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "feetType"
+    "@value" : "feet Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -3053,26 +2961,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#finalConsonant",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Last consonant of rhyming word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "finalConsonant"
+    "@value" : "final Consonant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -3091,12 +2992,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "footType"
+    "@value" : "foot Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -3106,19 +3006,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#grammaticalStressPattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Pattern based on disposition of the expected stresses according to grammar rules. This includes the distribution of weak and strong positions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "grammaticalStressPattern"
+    "@value" : "grammatical Stress Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -3129,23 +3026,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasAnacrusis",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "If the line has one or more unstressed syllables at the beginning of a line of verse, before the reckoning of the normal meter begins"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasAnacrusis"
+    "@value" : "has Anacrusis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3156,19 +3046,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasCaesura",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Whether it contains any lines with a pause/break near its middle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasCaesura"
+    "@value" : "has Caesura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3179,26 +3066,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasFirstFoot",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T20:30:43Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "This property points to the first Foot of the line"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasFirstFoot"
+    "@value" : "has First Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
@@ -3220,12 +3100,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasFirstUnit"
+    "@value" : "has First Unit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision"
@@ -3241,12 +3120,11 @@
     "@value" : "If the line, word or syllable is affected by a metaplasm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasMetaplasm"
+    "@value" : "has Metaplasm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3257,22 +3135,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRefrain",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Whether the work has a refrain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasRefrain"
+    "@value" : "has Refrain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3283,13 +3158,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#hasRhymeWord",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T20:30:43Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property points to the instance of Word for a further linguistic analysis/division by words"
@@ -3298,12 +3166,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasRhymeWord"
+    "@value" : "has Rhyme Word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
@@ -3317,9 +3184,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#initialPhonemesPattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Initial phonemes of each word in a line, in alphabetical order to show sound repetitions"
@@ -3328,12 +3192,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "initialPhonemesPattern"
+    "@value" : "initial Phonemes Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -3351,15 +3214,14 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   }, {
-    "@id" : "_:genid21"
+    "@id" : "_:genid20"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "initialPhonemesPatternByManner"
+    "@value" : "initial Phonemes Pattern By Manner"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -3367,26 +3229,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#interStrophicRelations",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Type of technique used to related stanzas by the repetition of sounds"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "interStrophicRelations"
+    "@value" : "inter Strophic Relations"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -3402,39 +3257,32 @@
     "@value" : "Refers to the metaplasm that affects a word or syllable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isAffectedBy"
+    "@value" : "is Affected By"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isAnalysedThrough",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T20:30:43Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property points to an item (Pattern) that contains analytical content about the current instance of Redaction, stanzas or lines"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Analysed Through"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isCatalectic",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Whether the instance at hand is the last foot of the line or hemistich and is lacking one syllable"
@@ -3443,12 +3291,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isCatalectic"
+    "@value" : "is Catalectic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3459,13 +3306,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isEcho",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Whether the word in a rhyming pair under analysis is the first one (false) or the second (true)"
@@ -3474,12 +3314,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isEcho"
+    "@value" : "is Echo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3498,12 +3337,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isEchoOf"
+    "@value" : "is Echo Of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
@@ -3519,12 +3357,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Symbol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isEmployedIn"
+    "@value" : "is Employed In"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalEncoding"
@@ -3540,12 +3377,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isFirstFoot"
+    "@value" : "is First Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
@@ -3558,14 +3394,13 @@
     "@value" : "This property points to the Foot that contains the item at hand as its first element"
   }, {
     "@language" : "en",
-    "@value" : "isFirstUnit"
+    "@value" : "is First Unit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
@@ -3581,12 +3416,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalSyllable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isFormedWith"
+    "@value" : "is Formed With"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"
@@ -3594,13 +3428,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetre",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It has one or more syllables in addition to those found in a standard metrical unit or line of verse"
@@ -3609,12 +3436,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isHypermetre"
+    "@value" : "is Hypermetre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3625,9 +3451,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypermetrical",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Whether the instance at hand is the last foot of the line or hemistich and it contains extra syllables"
@@ -3636,12 +3459,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isHypermetrical"
+    "@value" : "is Hypermetrical"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3652,13 +3474,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isHypometre",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It has one or more syllables less than to those found in a standard metrical unit or line of verse"
@@ -3667,12 +3482,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isHypometre"
+    "@value" : "is Hypometre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3683,9 +3497,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIrregular",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Whether in comparison to the other lines, the current foot breaks a regular pattern"
@@ -3694,12 +3505,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isIrregular"
+    "@value" : "is Irregular"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3710,26 +3520,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIsometric",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Whether the work is monometric, that is, if all lines have the same metrical analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isIsometric"
+    "@value" : "is Isometric"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3740,26 +3543,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isIsostrophic",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Whether all stanzas are metrically equivalent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isIsostrophic"
+    "@value" : "is Isostrophic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3778,12 +3574,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isPresentIn"
+    "@value" : "is Present In"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid5"
@@ -3794,13 +3589,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isRegular",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Regular metrics"
@@ -3809,12 +3597,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isRegular"
+    "@value" : "is Regular"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3833,12 +3620,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isRhymeWord"
+    "@value" : "is Rhyme Word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
@@ -3851,12 +3637,11 @@
     "@value" : "If the syllable or a metricla syllable has accent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isStressed"
+    "@value" : "is Stressed"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3864,26 +3649,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#isUnissonant",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Whether all stanzas have the same rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isUnissonant"
+    "@value" : "is Unissonant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3902,12 +3680,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#MetricalEncoding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isUsedBy"
+    "@value" : "is Used By"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
@@ -3918,13 +3695,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#label",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "String used to identify the item at hand (usually, “a”, “b”, “c”, etc.)"
@@ -3933,8 +3703,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3949,13 +3718,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#matches",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T20:30:43Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property points to the instance of RhymeMatch that contains the echo of the current rhyme word under analysis"
@@ -3964,8 +3726,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3988,12 +3749,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metricalCategory"
+    "@value" : "metrical Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4011,12 +3771,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metricalComplexity"
+    "@value" : "metrical Complexity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4034,12 +3793,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metricalContext"
+    "@value" : "metrical Context"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4049,23 +3807,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalNotes",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Metrical commentary"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metricalNotes"
+    "@value" : "metrical Notes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4084,12 +3835,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Symbol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metricalSymbol"
+    "@value" : "metrical Symbol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4105,12 +3855,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Symbol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metricalSymbolExplanation"
+    "@value" : "metrical Symbol Explanation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4123,12 +3872,11 @@
     "@value" : "Categorisation of the stanza/line  grouping or work according to metrics. E.g. “sapphic stanza”"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metricalType"
+    "@value" : "metrical Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4138,26 +3886,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#metricalTypeDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Commentary on the categorisation attending to metrics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metricalTypeDescription"
+    "@value" : "metrical Type Description"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4168,13 +3909,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextFoot",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T20:30:43Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property points to the next instance of Foot"
@@ -4183,12 +3917,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "nextFoot"
+    "@value" : "next Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
@@ -4202,13 +3935,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#nextFootAfterCaesura",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T20:30:43Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property points to the next instance of Foot when this is positioned after a caesura"
@@ -4217,12 +3943,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "nextFootAfterCaesura"
+    "@value" : "next Foot After Caesura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
@@ -4244,12 +3969,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "nextUnit"
+    "@value" : "next Unit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision"
@@ -4260,13 +3984,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfFeet",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Number of feet"
@@ -4275,12 +3992,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "numberOfFeet"
+    "@value" : "number Of Feet"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
@@ -4291,26 +4007,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfLines",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Number of lines in item"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "numberOfLines"
+    "@value" : "number Of Lines"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
@@ -4321,9 +4030,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfMorae",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The number of morae the foot contains"
@@ -4332,12 +4038,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "numberOfMorae"
+    "@value" : "number Of Morae"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
@@ -4348,26 +4053,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfStanzas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Number of stanzas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "numberOfStanzas"
+    "@value" : "number Of Stanzas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
@@ -4378,13 +4076,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#numberOfSyllables",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The exact number of syllables, that is, without paying attention to any metrical phenomena that may affect the counting"
@@ -4393,12 +4084,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "numberOfSyllables"
+    "@value" : "number Of Syllables"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
@@ -4409,23 +4099,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#patterningMetricalScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Metrical scheme for quantitative, tonal, accentual or accentual-syllabic metre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "patterningMetricalScheme"
+    "@value" : "patterning Metrical Scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4436,13 +4119,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phonemePattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "All phonemes in a line represented by their nearest written equivalents. They could be arranged in alphabetical order to show sound repetitions"
@@ -4451,12 +4127,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "phonemePattern"
+    "@value" : "phoneme Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4467,13 +4142,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phonemePatternByManner",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "All phonemes in a line represented by manner of articulation. They could be arranged in alphabetical order to show sound repetitions. The coding scheme presented in one of the databases stands for the different manners of articulation of consonants, and at the same time groups together front and back vowels"
@@ -4482,12 +4150,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "phonemePatternByManner"
+    "@value" : "phoneme Pattern By Manner"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4498,13 +4165,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#phoneticTranscription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Phonetic transcription"
@@ -4513,12 +4173,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "phoneticTranscription"
+    "@value" : "phonetic Transcription"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4529,13 +4188,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#prefinalConsonants",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Consonants between the stressed vowel and the last consonant"
@@ -4544,12 +4196,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "prefinalConsonants"
+    "@value" : "prefinal Consonants"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4560,20 +4211,12 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#presents",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T20:30:43Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property points to an instance of Rhyme that is contained in the current item under analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4593,12 +4236,11 @@
     "@value" : "Categorisation of the stanza or  work according to the degree in which the different rhyming sounds match (e.g. assonant, consonant...)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "presentsRhymeMatching"
+    "@value" : "presents Rhyme Matching"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4616,12 +4258,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "previousFoot"
+    "@value" : "previous Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
@@ -4639,12 +4280,11 @@
     "@id" : "_:genid14"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "previousFootBeforeCaesura"
+    "@value" : "previous Foot Before Caesura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
@@ -4660,12 +4300,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "previousUnit"
+    "@value" : "previous Unit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision"
@@ -4673,13 +4312,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Categorisation of the item at hand"
@@ -4688,12 +4320,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "rhymeCategory"
+    "@value" : "rhyme Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4712,12 +4343,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#StanzaPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "rhymeDispositionType"
+    "@value" : "rhyme Disposition Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4727,13 +4357,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeGrapheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Grapheme that represents the rhyming sounds"
@@ -4742,12 +4365,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "rhymeGrapheme"
+    "@value" : "rhyme Grapheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4758,13 +4380,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymePhoneme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Phonetic transcription of the rhyming sounds"
@@ -4773,12 +4388,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "rhymePhoneme"
+    "@value" : "rhyme Phoneme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4789,26 +4403,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "A rhyme scheme is the pattern of rhymes at the end of each line of a poem or song. It is usually referred to by using letters to indicate which lines rhyme; lines designated with the same letter all rhyme with each other"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Rhyme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "rhymeScheme"
+    "@value" : "rhyme Scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4819,26 +4426,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#rhymeTypeProportion",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Proportion of the feminine/masculine rhymes of the poem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "rhymeTypeProportion"
+    "@value" : "rhyme Type Proportion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4857,12 +4457,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "rhymesWith"
+    "@value" : "rhymes With"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
@@ -4870,13 +4469,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#scannedLine",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A line metrically analysed, marked up in terms of syllable division and accent"
@@ -4885,12 +4477,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "scannedLine"
+    "@value" : "scanned Line"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -4909,8 +4500,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Foot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4930,12 +4520,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "stressPosition"
+    "@value" : "stress Position"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -4950,16 +4539,30 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "successIn"
+    "@value" : "success In"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#syllabicMetricalScheme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Metrical Scheme based on Syllables"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "syllabic Metrical Scheme"
+  } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#typeOfMetaplasm",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -4970,9 +4573,12 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Metaplasm"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "typeOfMetaplasm"
+    "@value" : "type Of Metaplasm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4990,12 +4596,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#RhymeMatch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "typeOfRhymeMatching"
+    "@value" : "type Of Rhyme Matching"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -5013,12 +4618,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#FootDivision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "unitType"
+    "@value" : "unit Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid18"
@@ -5026,13 +4630,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#uses",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T20:30:43Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This property points to the instance of MetricalEncoding in which the conventions implemented in the item at hand are explained"
   } ],
@@ -5040,8 +4637,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#Pattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5190,12 +4786,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#WorkPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "versificationType"
+    "@value" : "versification Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -5205,13 +4800,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#vowelTypeScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "mluisadiez"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2018-06-16T18:39:21Z"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Linguistic properties of the vowels of the line"
@@ -5220,12 +4808,11 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements#LinePattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "vowelTypeScheme"
+    "@value" : "vowel Type Scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -5236,14 +4823,14 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line",
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid97"
+    "@id" : "_:genid96"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza",
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid98"
+    "@id" : "_:genid97"
   }, {
-    "@id" : "_:genid99"
+    "@id" : "_:genid98"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/contributors",

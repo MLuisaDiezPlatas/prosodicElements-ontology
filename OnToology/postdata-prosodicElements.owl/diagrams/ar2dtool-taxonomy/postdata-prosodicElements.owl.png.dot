@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "pdprosodic:WorkPattern" "pdprosodic:Foot" "pdprosodic:LinePattern" "pdprosodic:Pattern" "gold:Foot" "pdprosodic:StanzaPattern" "pdstruct:Line" "pdstruct:Punctuation" "pdstruct:OrderedStanzaList" "pdstruct:Word" "pdstruct:Stanza" "pdstruct:Token" "pdcore:Redaction" "pdstruct:Syllable" "raop:Word" "pdstruct:OrderedLineList" "olo:Slot" "olo:OrderedList" "pdcore:Role" "frbroo:F17_Aggregation_Work" "pdcore:OrderedTextUnitList" "agentrole:Agent" "gn:Feature" "edm:Agent" "pdcore:Agent" "pdcore:CreatorRole" "pdcore:Person" "pdcore:Organisation" "edm:Place" "pdcore:Ensemble" "foaf:Person" "frbroo:F22_Self-Contained_Expression" "bibframe:Event" "edm:Event" "pdcore:TextUnit" "foaf:Organization" "edm:ProvidedCHO" "pdcore:Place" "schema2:Place" "pdcore:Event" "pdcore:PoeticWork" "frbroo:F1_Work" "schema2:Role" "owl:Thing" "objectrole:Role" "objectrole:Object" "postdata-dates:OpenedIntervalExpression" "postdata-dates:ClosedIntervalExpression" "postdata-dates:IntervalExpression" "postdata-dates:ExactDateExpression" "edm:TimeSpan" "postdata-dates:DateExpression" "postdata-dates:ApproximateDateExpression" "classification:Concept" ; /*classes style*/
+node [shape = rectangle, color="black"]; "pdprosodic:WorkPattern" "pdprosodic:Foot" "pdprosodic:LinePattern" "pdprosodic:Pattern" "gold:Foot" "pdprosodic:StanzaPattern" "pdstruct:Punctuation" "pdstruct:Line" "pdstruct:OrderedStanzaList" "pdstruct:Word" "pdstruct:Stanza" "pdstruct:Token" "pdcore:Redaction" "pdstruct:Syllable" "raop:Word" "pdstruct:OrderedLineList" "olo:Slot" "olo:OrderedList" "pdcore:Role" "frbroo:F17_Aggregation_Work" "pdcore:OrderedTextUnitList" "agentrole:Agent" "gn:Feature" "edm:Agent" "pdcore:Agent" "pdcore:CreatorRole" "pdcore:Person" "pdcore:Organisation" "edm:Place" "pdcore:Ensemble" "foaf:Person" "frbroo:F22_Self-Contained_Expression" "bibframe:Event" "edm:Event" "pdcore:TextUnit" "foaf:Organization" "edm:ProvidedCHO" "pdcore:Place" "schema1:Place" "pdcore:Event" "pdcore:PoeticWork" "frbroo:F1_Work" "schema1:Role" "owl:Thing" "objectrole:Role" "objectrole:Object" "postdata-dates:OpenedIntervalExpression" "postdata-dates:ClosedIntervalExpression" "postdata-dates:IntervalExpression" "postdata-dates:ExactDateExpression" "edm:TimeSpan" "postdata-dates:DateExpression" "postdata-dates:ApproximateDateExpression" "classification:Concept" ; /*classes style*/
 	"pdprosodic:WorkPattern" -> "pdprosodic:Pattern" [ label = "rdfs:subClassOf" ];
 	"pdstruct:OrderedStanzaList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Punctuation" -> "pdstruct:Token" [ label = "rdfs:subClassOf" ];
@@ -30,14 +30,14 @@ node [shape = rectangle, color="black"]; "pdprosodic:WorkPattern" "pdprosodic:Fo
 	"pdcore:TextUnit" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
 	"pdcore:Redaction" -> "frbroo:F22_Self-Contained_Expression" [ label = "rdfs:subClassOf" ];
 	"pdcore:Place" -> "edm:Place" [ label = "rdfs:subClassOf" ];
-	"pdcore:Place" -> "schema2:Place" [ label = "rdfs:subClassOf" ];
+	"pdcore:Place" -> "schema1:Place" [ label = "rdfs:subClassOf" ];
 	"pdcore:Place" -> "gn:Feature" [ label = "rdfs:subClassOf" ];
 	"pdstruct:OrderedLineList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
 	"pdcore:CreatorRole" -> "pdcore:Role" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Syllable" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Syllable" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
 	"pdcore:Role" -> "objectrole:Role" [ label = "rdfs:subClassOf" ];
-	"pdcore:Role" -> "schema2:Role" [ label = "rdfs:subClassOf" ];
+	"pdcore:Role" -> "schema1:Role" [ label = "rdfs:subClassOf" ];
 	"pdprosodic:StanzaPattern" -> "pdprosodic:Pattern" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Line" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Line" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
